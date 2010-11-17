@@ -3,3 +3,33 @@ Some Pointers to Python Visualizations:
 http://arcticpaint.com/media/rabbyt/docs/rabbyt/
 
 http://www.pyglet.org/doc/api/index.html
+
+A pre-defined Area will be allocated and divided into Quadrants:
+
+The following DIA describes a bit better how the Locator should Function.
+
+The top 2 RSSI values define a Rather random Position on the Grid.
+
+SE: rand(Q2x, Q2y)
+WE: rand(Q5x, 384/2)
+
+Q1 - Q4 = External Adapters
+
+Q5 Bluetooth attached to Machine
+
+	319 	BT_Location	Feature	New	Normal	Make Bluetooth Logo Fade-IN/OUT		09/27/2010 04:52 pm
+	308 	BT_Location	Support	New	Normal	Development On Hold		09/23/2010 07:18 pm
+
+There are a couple of resources online
+
+    * www.cs.brown.edu/~rt/gdhandbook/chapters/security.pdf
+    * http://secviz.org/
+    * http://www.cs.ucdavis.edu/~ma/SecVis/
+
+Known tools include
+
+    * rumint
+
+	322 	VisualSecure	Task	New	Normal	Design GUI	Steve Clement	09/27/2010 06:04 pm
+	319 	BT_Location	Feature	New	Normal	Make Bluetooth Logo Fade-IN/OUT		09/27/2010 04:52 pm
+	308 	BT_Location	Support	New	Normal	Development On Hold		09/23/2010 07:18 pm
