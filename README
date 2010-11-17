@@ -1,0 +1,11 @@
+
+
+External Repos:
+
+svn co http://python-bluetooth-scanner.googlecode.com/svn/trunk
+
+Switched to git
+
+== About git usage ==
+
+* Always enter a meaningfull comment when committing

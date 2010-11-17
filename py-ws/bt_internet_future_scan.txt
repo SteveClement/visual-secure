@@ -1,0 +1,26 @@
+	F4:0B:93:5E:A1:82	BlackBerry 9700
+	00:21:06:72:F2:40	BlackBerry 8820
+	00:21:BA:90:FE:D3	Pays
+	00:1E:4C:FA:62:C8	DANIEL-K-XP-X61
+	00:03:7A:AD:9B:D6	ES-YK9S046216
+	64:B9:E8:1D:43:CF	TB iPhone
+	00:12:D1:50:43:D8	Hermes
+	00:1F:5C:C2:0A:18	Gašper E66
+	00:22:68:EC:83:0D	poo
+	00:23:7A:38:E1:60	BlackBerry Rudy
+
+ees1has-iPhone.local.5353
+Freddes-iPhone.local.5353
+parallel.local.5353
+deneb.local.5353
+Rigel.local.5353
+Alexandre-Santoss-Phone.local.5353
+iPhone-de-Sebastien.local.5353
+panagiotis-demestichass-macbook.local.5353
+Ian-Osbornes-iPhone.local.5353
+ullilux.local.5353
+MyTravelPC.local.5353
+Thorstens-iPhone.local.5353
+iPod-touch.local.5353
+NGBYILMAZs-iPhone.local.5353
+Pascals-iPhone.local.5353

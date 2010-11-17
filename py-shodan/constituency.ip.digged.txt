@@ -1,0 +1,1627 @@
+
+; <<>> DiG 9.7.1-P2 <<>> www.feulen.lu
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 31495
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.feulen.lu.			IN	A
+
+;; ANSWER SECTION:
+www.feulen.lu.		9784	IN	A	195.46.227.211
+
+;; Query time: 16 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 47
+
+; <<>> DiG 9.7.1-P2 <<>> www.reckange.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29077
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.reckange.lu.		IN	A
+
+;; ANSWER SECTION:
+www.reckange.lu.	81204	IN	A	80.92.89.227
+
+;; Query time: 18 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 49
+
+; <<>> DiG 9.7.1-P2 <<>> www.redange.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57919
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.redange.lu.			IN	A
+
+;; ANSWER SECTION:
+www.redange.lu.		82779	IN	A	62.216.178.23
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 48
+
+; <<>> DiG 9.7.1-P2 <<>> www.saeul.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 802
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.saeul.lu.			IN	A
+
+;; ANSWER SECTION:
+www.saeul.lu.		3566	IN	CNAME	saeul.lu.
+saeul.lu.		3566	IN	A	80.92.89.227
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 60
+
+; <<>> DiG 9.7.1-P2 <<>> www.sanem.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41741
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.sanem.lu.			IN	A
+
+;; ANSWER SECTION:
+www.sanem.lu.		78136	IN	A	212.24.214.41
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 46
+
+; <<>> DiG 9.7.1-P2 <<>> www.schuttrange.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4250
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.schuttrange.lu.		IN	A
+
+;; ANSWER SECTION:
+www.schuttrange.lu.	3384	IN	A	80.92.89.227
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 52
+
+; <<>> DiG 9.7.1-P2 <<>> www.troisvierges.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23991
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.troisvierges.lu.		IN	A
+
+;; ANSWER SECTION:
+www.troisvierges.lu.	3566	IN	A	80.92.89.227
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 53
+
+; <<>> DiG 9.7.1-P2 <<>> www.vichten.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32879
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.vichten.lu.			IN	A
+
+;; ANSWER SECTION:
+www.vichten.lu.		4003	IN	A	195.46.227.211
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 48
+
+; <<>> DiG 9.7.1-P2 <<>> www.waldbredimus.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22646
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.waldbredimus.lu.		IN	A
+
+;; ANSWER SECTION:
+www.waldbredimus.lu.	10766	IN	A	195.46.227.211
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 53
+
+; <<>> DiG 9.7.1-P2 <<>> www.weiler-la-tour.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 49013
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.weiler-la-tour.lu.		IN	A
+
+;; ANSWER SECTION:
+www.weiler-la-tour.lu.	3566	IN	CNAME	weiler-la-tour.lu.
+weiler-la-tour.lu.	3566	IN	A	80.92.89.227
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 69
+
+; <<>> DiG 9.7.1-P2 <<>> www.winseler.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51752
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.winseler.lu.		IN	A
+
+;; ANSWER SECTION:
+www.winseler.lu.	1267	IN	CNAME	winseler.lu.
+winseler.lu.		1267	IN	A	195.46.227.211
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 63
+
+; <<>> DiG 9.7.1-P2 <<>> www.guichet.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24623
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.guichet.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.guichet.public.lu.	1525	IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 55
+
+; <<>> DiG 9.7.1-P2 <<>> www.europaforum.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40997
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.europaforum.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.europaforum.public.lu. 818	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 59
+
+; <<>> DiG 9.7.1-P2 <<>> www.chd.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52565
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.chd.lu.			IN	A
+
+;; ANSWER SECTION:
+www.chd.lu.		2059	IN	A	94.125.202.40
+
+;; Query time: 21 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 44
+
+; <<>> DiG 9.7.1-P2 <<>> www.gouvernement.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47068
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.gouvernement.lu.		IN	A
+
+;; ANSWER SECTION:
+www.gouvernement.lu.	53542	IN	A	194.154.200.102
+
+;; Query time: 22 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 53
+
+; <<>> DiG 9.7.1-P2 <<>> www.conseil-etat.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21315
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.conseil-etat.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.conseil-etat.public.lu. 3565 IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 60
+
+; <<>> DiG 9.7.1-P2 <<>> www.cour-des-comptes.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43599
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cour-des-comptes.lu.	IN	A
+
+;; ANSWER SECTION:
+www.cour-des-comptes.lu. 84094	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 57
+
+; <<>> DiG 9.7.1-P2 <<>> www.jurad.etat.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 973
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.jurad.etat.lu.		IN	A
+
+;; ANSWER SECTION:
+www.jurad.etat.lu.	39763	IN	A	194.154.200.74
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.justice.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51548
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.justice.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.justice.public.lu.	1299	IN	A	194.154.200.102
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 55
+
+; <<>> DiG 9.7.1-P2 <<>> www.myschool.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37864
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.myschool.lu.		IN	A
+
+;; ANSWER SECTION:
+www.myschool.lu.	6	IN	A	158.64.87.115
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 49
+
+; <<>> DiG 9.7.1-P2 <<>> www.environnement.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 55151
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.environnement.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.environnement.public.lu. 373 IN	A	194.154.200.102
+
+;; Query time: 18 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 61
+
+; <<>> DiG 9.7.1-P2 <<>> www.fonction-publique.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64708
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.fonction-publique.public.lu. IN	A
+
+;; ANSWER SECTION:
+www.fonction-publique.public.lu. 509 IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 65
+
+; <<>> DiG 9.7.1-P2 <<>> www.innovation.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22380
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.innovation.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.innovation.public.lu. 2060	IN	A	194.154.217.85
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 58
+
+; <<>> DiG 9.7.1-P2 <<>> www.legilux.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20826
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.legilux.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.legilux.public.lu.	164	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 55
+
+; <<>> DiG 9.7.1-P2 <<>> www.marches.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20376
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.marches.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.marches.public.lu.	3167	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 55
+
+; <<>> DiG 9.7.1-P2 <<>> www.mediacom.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22385
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mediacom.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.mediacom.public.lu.	3167	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 56
+
+; <<>> DiG 9.7.1-P2 <<>> www.sante.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63927
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.sante.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.sante.public.lu.	608	IN	A	194.154.200.102
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 53
+
+; <<>> DiG 9.7.1-P2 <<>> www.112.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20910
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.112.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.112.public.lu.	986	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:48 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.securite-alimentaire.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2645
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.securite-alimentaire.public.lu. IN	A
+
+;; ANSWER SECTION:
+www.securite-alimentaire.public.lu. 3477 IN A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 68
+
+; <<>> DiG 9.7.1-P2 <<>> www.eluxembourg.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37815
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.eluxembourg.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.eluxembourg.public.lu. 2234	IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 59
+
+; <<>> DiG 9.7.1-P2 <<>> www.statistiques.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 11497
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.statistiques.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.statistiques.public.lu. 177	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 60
+
+; <<>> DiG 9.7.1-P2 <<>> www.ccg.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62742
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.ccg.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.ccg.public.lu.	3566	IN	A	194.154.200.102
+
+;; Query time: 16 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.cnpd.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43988
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cnpd.lu.			IN	A
+
+;; ANSWER SECTION:
+www.cnpd.lu.		86366	IN	A	194.154.200.102
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 45
+
+; <<>> DiG 9.7.1-P2 <<>> www.simplification.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 25543
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.simplification.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.simplification.public.lu. 3566 IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 62
+
+; <<>> DiG 9.7.1-P2 <<>> www.hcpn.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 65492
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.hcpn.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.hcpn.public.lu.	3566	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 52
+
+; <<>> DiG 9.7.1-P2 <<>> www.ilr.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57754
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.ilr.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.ilr.public.lu.	2470	IN	A	194.154.200.102
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.mae.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 39986
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mae.lu.			IN	A
+
+;; ANSWER SECTION:
+www.mae.lu.		6797	IN	CNAME	prodc.audaxis.com.
+prodc.audaxis.com.	26	IN	A	194.250.102.200
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 75
+
+; <<>> DiG 9.7.1-P2 <<>> www.armee.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3179
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.armee.lu.			IN	A
+
+;; ANSWER SECTION:
+www.armee.lu.		86366	IN	A	85.93.219.20
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 46
+
+; <<>> DiG 9.7.1-P2 <<>> www.mcesr.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23444
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mcesr.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.mcesr.public.lu.	915	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 53
+
+; <<>> DiG 9.7.1-P2 <<>> www.anlux.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41858
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.anlux.lu.			IN	A
+
+;; ANSWER SECTION:
+www.anlux.lu.		84445	IN	A	88.198.43.16
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 46
+
+; <<>> DiG 9.7.1-P2 <<>> www.cna.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28309
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cna.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.cna.public.lu.	1901	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.cne.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50413
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cne.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.cne.public.lu.	3566	IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.miat.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 45717
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.miat.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.miat.public.lu.	1526	IN	A	194.154.200.102
+
+;; Query time: 26 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 52
+
+; <<>> DiG 9.7.1-P2 <<>> www.ivl.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 553
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.ivl.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.ivl.public.lu.	3566	IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.espon.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13727
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.espon.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.espon.public.lu.	1749	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 53
+
+; <<>> DiG 9.7.1-P2 <<>> www.myenergy.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32541
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.myenergy.lu.		IN	A
+
+;; ANSWER SECTION:
+www.myenergy.lu.	82396	IN	CNAME	myenergy.lu.
+myenergy.lu.		82396	IN	A	80.92.66.204
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 63
+
+; <<>> DiG 9.7.1-P2 <<>> www.mt.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 31964
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mt.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.mt.public.lu.	973	IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 50
+
+; <<>> DiG 9.7.1-P2 <<>> www.mtp.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14784
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mtp.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.mtp.public.lu.	2700	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.abp.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 27928
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.abp.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.abp.public.lu.	86367	IN	A	194.154.200.102
+
+;; Query time: 28 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.pch.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40418
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.pch.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.pch.public.lu.	1141	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.cita.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38199
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cita.lu.			IN	A
+
+;; ANSWER SECTION:
+www.cita.lu.		349	IN	A	194.154.200.87
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 45
+
+; <<>> DiG 9.7.1-P2 <<>> www.eco.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17456
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.eco.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.eco.public.lu.	405	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.bed.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24029
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.bed.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.bed.public.lu.	1717	IN	A	194.154.200.102
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.cdc.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9481
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cdc.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.cdc.public.lu.	405	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.concurrence.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44642
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.concurrence.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.concurrence.public.lu. 1901	IN	A	194.154.200.102
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 59
+
+; <<>> DiG 9.7.1-P2 <<>> www.ilnas.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 25757
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.ilnas.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.ilnas.public.lu.	3566	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 53
+
+; <<>> DiG 9.7.1-P2 <<>> www.odc.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50048
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.odc.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.odc.public.lu.	175	IN	A	194.154.200.102
+
+;; Query time: 36 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.pt.lu/portal/
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 34116
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.pt.lu/portal/.		IN	A
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 35
+
+; <<>> DiG 9.7.1-P2 <<>> www.statec.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16423
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.statec.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.statec.public.lu.	2234	IN	A	194.154.200.102
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 54
+
+; <<>> DiG 9.7.1-P2 <<>> www.luxembourgforbusiness.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13057
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.luxembourgforbusiness.lu.	IN	A
+
+;; ANSWER SECTION:
+www.luxembourgforbusiness.lu. 1227 IN	A	80.92.66.204
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 62
+
+; <<>> DiG 9.7.1-P2 <<>> www.men.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7503
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.men.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.men.public.lu.	2702	IN	A	194.154.200.102
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.cte.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 55375
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cte.lu.			IN	A
+
+;; ANSWER SECTION:
+www.cte.lu.		81779	IN	CNAME	sigma.cte.lu.
+sigma.cte.lu.		85737	IN	A	158.64.46.6
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 64
+
+; <<>> DiG 9.7.1-P2 <<>> www.infpc.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9810
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.infpc.lu.			IN	A
+
+;; ANSWER SECTION:
+www.infpc.lu.		81046	IN	A	80.92.90.29
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 46
+
+; <<>> DiG 9.7.1-P2 <<>> www.script.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 49886
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.script.lu.			IN	A
+
+;; ANSWER SECTION:
+www.script.lu.		80402	IN	A	158.64.50.6
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 47
+
+; <<>> DiG 9.7.1-P2 <<>> www.cedies.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44951
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cedies.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.cedies.public.lu.	1669	IN	A	194.154.200.102
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 54
+
+; <<>> DiG 9.7.1-P2 <<>> www.fnr.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 88
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.fnr.lu.			IN	A
+
+;; ANSWER SECTION:
+www.fnr.lu.		76	IN	A	85.93.219.20
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 44
+
+; <<>> DiG 9.7.1-P2 <<>> www.restena.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57406
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.restena.lu.			IN	A
+
+;; ANSWER SECTION:
+www.restena.lu.		44747	IN	A	158.64.1.65
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 48
+
+; <<>> DiG 9.7.1-P2 <<>> www.cnpf.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 30265
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cnpf.lu.			IN	A
+
+;; ANSWER SECTION:
+www.cnpf.lu.		2601	IN	CNAME	hnweb1.healthnet.lu.
+hnweb1.healthnet.lu.	889	IN	A	213.166.55.140
+
+;; Query time: 25 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 76
+
+; <<>> DiG 9.7.1-P2 <<>> www.fns.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38181
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.fns.lu.			IN	A
+
+;; ANSWER SECTION:
+www.fns.lu.		1226	IN	CNAME	hnweb1.healthnet.lu.
+hnweb1.healthnet.lu.	889	IN	A	213.166.55.140
+
+;; Query time: 21 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 75
+
+; <<>> DiG 9.7.1-P2 <<>> www.snj.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63372
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.snj.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.snj.public.lu.	3333	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.mf.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 25552
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mf.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.mf.public.lu.	404	IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:49 2010
+;; MSG SIZE  rcvd: 50
+
+; <<>> DiG 9.7.1-P2 <<>> www.aed.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24703
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.aed.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.aed.public.lu.	96	IN	A	194.154.200.102
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.cssf.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34229
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cssf.lu.			IN	A
+
+;; ANSWER SECTION:
+www.cssf.lu.		83138	IN	A	195.46.235.211
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 45
+
+; <<>> DiG 9.7.1-P2 <<>> www.impotsdirects.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40295
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.impotsdirects.public.lu.	IN	A
+
+;; ANSWER SECTION:
+www.impotsdirects.public.lu. 1663 IN	A	194.154.200.102
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 61
+
+; <<>> DiG 9.7.1-P2 <<>> www.do.etat.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 27954
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.do.etat.lu.			IN	A
+
+;; ANSWER SECTION:
+www.do.etat.lu.		62055	IN	A	194.154.200.74
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 48
+
+; <<>> DiG 9.7.1-P2 <<>> www.act.etat.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15267
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.act.etat.lu.		IN	A
+
+;; ANSWER SECTION:
+www.act.etat.lu.	69754	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 49
+
+; <<>> DiG 9.7.1-P2 <<>> www.igf.etat.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 33415
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.igf.etat.lu.		IN	A
+
+;; ANSWER SECTION:
+www.igf.etat.lu.	62861	IN	A	194.154.200.74
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 49
+
+; <<>> DiG 9.7.1-P2 <<>> www.te.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9390
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.te.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.te.public.lu.	1899	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 50
+
+; <<>> DiG 9.7.1-P2 <<>> www.cgid.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9730
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cgid.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.cgid.public.lu.	1899	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 52
+
+; <<>> DiG 9.7.1-P2 <<>> www.ecp.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15429
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.ecp.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.ecp.public.lu.	1850	IN	A	194.154.200.102
+
+;; Query time: 20 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.eau.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 18509
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.eau.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.eau.public.lu.	3032	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.police.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6762
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.police.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.police.public.lu.	538	IN	A	194.154.200.102
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 54
+
+; <<>> DiG 9.7.1-P2 <<>> www.igp.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 33062
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.igp.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.igp.public.lu.	3567	IN	A	194.154.200.102
+
+;; Query time: 19 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.granderegion.net
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26278
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.granderegion.net.		IN	A
+
+;; ANSWER SECTION:
+www.granderegion.net.	32	IN	A	194.154.200.102
+
+;; Query time: 24 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 54
+
+; <<>> DiG 9.7.1-P2 <<>> www.mj.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 11239
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mj.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.mj.public.lu.	1604	IN	A	194.154.200.102
+
+;; Query time: 23 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 50
+
+; <<>> DiG 9.7.1-P2 <<>> www.spse.etat.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22996
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.spse.etat.lu.		IN	A
+
+;; ANSWER SECTION:
+www.spse.etat.lu.	64216	IN	A	194.154.200.74
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 50
+
+; <<>> DiG 9.7.1-P2 <<>> www.rcsl.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47709
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.rcsl.lu.			IN	A
+
+;; ANSWER SECTION:
+www.rcsl.lu.		10797	IN	A	194.154.205.69
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 45
+
+; <<>> DiG 9.7.1-P2 <<>> www.logement.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 46856
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.logement.lu.		IN	A
+
+;; ANSWER SECTION:
+www.logement.lu.	697	IN	A	195.24.77.79
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 49
+
+; <<>> DiG 9.7.1-P2 <<>> www.fondsdulogement.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40984
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.fondsdulogement.lu.		IN	A
+
+;; ANSWER SECTION:
+www.fondsdulogement.lu.	5	IN	A	80.90.45.130
+
+;; Query time: 39 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 56
+
+; <<>> DiG 9.7.1-P2 <<>> observatoire.ceps.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 1519
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;observatoire.ceps.lu.		IN	A
+
+;; ANSWER SECTION:
+observatoire.ceps.lu.	80057	IN	A	158.64.10.154
+
+;; Query time: 32 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 54
+
+; <<>> DiG 9.7.1-P2 <<>> www.pacte-logement.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9432
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.pacte-logement.lu.		IN	A
+
+;; ANSWER SECTION:
+www.pacte-logement.lu.	80	IN	CNAME	pacte-logement.lu.
+pacte-logement.lu.	60	IN	A	212.24.208.3
+
+;; Query time: 35 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 69
+
+; <<>> DiG 9.7.1-P2 <<>> www.snhbm.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38861
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.snhbm.lu.			IN	A
+
+;; ANSWER SECTION:
+www.snhbm.lu.		1899	IN	A	195.200.240.75
+
+;; Query time: 28 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 46
+
+; <<>> DiG 9.7.1-P2 <<>> www.ms.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 21893
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.ms.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.ms.public.lu.	3398	IN	A	194.154.200.102
+
+;; Query time: 35 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 50
+
+; <<>> DiG 9.7.1-P2 <<>> www.mss.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20537
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mss.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.mss.public.lu.	1372	IN	A	194.154.200.102
+
+;; Query time: 32 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.cns.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41992
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.cns.lu.			IN	A
+
+;; ANSWER SECTION:
+www.cns.lu.		1700	IN	CNAME	hnweb1.healthnet.lu.
+hnweb1.healthnet.lu.	888	IN	A	213.166.55.140
+
+;; Query time: 31 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 75
+
+; <<>> DiG 9.7.1-P2 <<>> www.secu.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20771
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.secu.lu.			IN	A
+
+;; ANSWER SECTION:
+www.secu.lu.		2059	IN	CNAME	hnweb1.healthnet.lu.
+hnweb1.healthnet.lu.	888	IN	A	213.166.55.140
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 76
+
+; <<>> DiG 9.7.1-P2 <<>> www.mte.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51484
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.mte.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.mte.public.lu.	3600	IN	A	194.154.200.102
+
+;; Query time: 35 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.adem.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 5345
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.adem.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.adem.public.lu.	965	IN	A	194.154.200.102
+
+;; Query time: 27 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 52
+
+; <<>> DiG 9.7.1-P2 <<>> www.fse.public.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64561
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.fse.public.lu.		IN	A
+
+;; ANSWER SECTION:
+www.fse.public.lu.	2560	IN	A	194.154.200.102
+
+;; Query time: 28 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 51
+
+; <<>> DiG 9.7.1-P2 <<>> www.itm.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24720
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.itm.lu.			IN	A
+
+;; ANSWER SECTION:
+www.itm.lu.		6300	IN	CNAME	itm.lu.
+itm.lu.			6300	IN	A	194.154.200.76
+
+;; Query time: 26 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 58
+
+; <<>> DiG 9.7.1-P2 <<>> www.youth.lu
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 55739
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.youth.lu.			IN	A
+
+;; ANSWER SECTION:
+www.youth.lu.		2606	IN	A	194.154.205.26
+
+;; Query time: 32 msec
+;; SERVER: 192.60.14.24#53(192.60.14.24)
+;; WHEN: Mon Nov 15 13:27:50 2010
+;; MSG SIZE  rcvd: 46
+

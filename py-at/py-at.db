@@ -1,0 +1,5 @@
+py-at is the main database with the following tables
+
+AT_commands
+This is a general list of common at commands for Nokia, LG and Sony Erricsson Phones please complete list and omit the leading AT
+create table AT_commands (ATCommand TEXT, Manufacturer TEXT, Model TEXT, Comment TEXT)

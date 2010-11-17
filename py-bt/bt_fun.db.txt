@@ -1,0 +1,69 @@
+bt_fun is the main database with the following tables
+
+AT_commands
+This is a general list of common at commands for Nokia, LG and Sony Erricsson Phones please complete list and omit the leading AT
+create table AT_commands ATCommand, Manufacturer, Model, Comment
+
+create table phone_list Address, Manufacturer, Model, Comment
+An optional list of phones that you can populate
+
+create table auto_device (addr TEXT, name TEXT, RSSI INTEGER, DateTime DATE);
+create table locate_device (addr TEXT, name TEXT, bearing TEXT, RSSI INTEGER, DateTime DATE);
+
+Python sqlite temp memory DB (Fast):
+
+memoryConnection = sqlite.connect(':memory:')
+cursor.execute('CREATE TABLE auto_device (addr TEXT, name TEXT, RSSI INTEGER, DateTime DATE)')
+cursor.execute('INSERT INTO auto_device (addr, name) values ('00:12:D1:50:43:D8', 'n/a')')
+SELECT * FROM auto_device where DateTime like '2010-06-06%' GROUP BY addr;
+select * from auto_device where DateTime LIKE '2010-06-06 23:1%';
+
+connection = sqlite.connect('test.db')
+cursor = connection.cursor()
+cursor.execute('CREATE TABLE auto_device (addr TEXT, name TEXT, RSSI INTEGER, DateTime DATE)')
+connection.commit
+
+impoirt datetime, time
+ time.strftime("%Y-%m-%d %H:%M")
+
+cursor.execute('SELECT * FROM names')
+>>> for row in cursor:
+                print '-'*10
+                print 'ID:', row[0]
+                print 'Name:', row[1]
+                print 'E-Mail:', row[2]
+                print '-'*10       
+
+insert into auto_device (addr, name) values ('00:1C:9A:E8:87:B5','BT exception 7f');
+insert into auto_device (addr, name) values ('00:18:42:EA:A7:B0','Ghislain N95');
+insert into auto_device (addr, name) values ('00:23:45:21:B4:98','W350i');
+insert into auto_device (addr, name) values ('00:22:68:EC:83:0D','poo');
+insert into auto_device (addr, name) values ('00:1A:6B:FA:80:30','n/a');
+insert into auto_device (addr, name) values ('00:25:D0:73:BE:C6','E71-stefan');
+insert into auto_device (addr, name) values ('00:16:41:D8:70:C0','TURKCELL-BAC35E');
+insert into auto_device (addr, name) values ('00:1D:82:BD:44:43','n/a');
+insert into auto_device (addr, name) values ('00:16:41:F6:84:AA','Nigel PC');
+insert into auto_device (addr, name) values ('00:23:4D:F0:1A:B1','FLORIA');
+insert into auto_device (addr, name) values ('00:25:56:D5:05:BD','CHANDON');
+insert into auto_device (addr, name) values ('00:22:5F:97:7E:F9','Dell Wireless 370 Bluetooth Mini-card');
+insert into auto_device (addr, name) values ('00:1F:5C:C2:0A:18','Gašper E66');
+insert into auto_device (addr, name) values ('00:22:58:F4:54:9F','');
+insert into auto_device (addr, name) values ('00:23:4D:E5:E1:33','TRTP8168');
+insert into auto_device (addr, name) values ('00:22:FC:4B:61:47','Nokia E51');
+insert into auto_device (addr, name) values ('00:22:FC:4B:61:47','Nokia E51');
+insert into auto_device (addr, name) values ('00:26:5E:93:E0:1A','LENOVO-CF3A44E1');
+insert into auto_device (addr, name) values ('00:22:68:EC:83:0D','poo');
+insert into auto_device (addr, name) values ('00:25:D0:73:BE:C6','E71-stefan');
+insert into auto_device (addr, name) values ('00:1A:6B:FA:80:30','RENNLXPRDL2466');
+insert into auto_device (addr, name) values ('00:25:56:D5:05:BD','CHANDON');
+insert into auto_device (addr, name) values ('00:23:45:21:B4:98','W350i');
+insert into auto_device (addr, name) values ('00:22:58:F4:54:9F','');
+insert into auto_device (addr, name) values ('00:1C:9A:E8:87:B5','BT exception 7f');
+insert into auto_device (addr, name) values ('00:18:42:EA:A7:B0','Ghislain N95');
+insert into auto_device (addr, name) values ('00:1F:5C:C2:0A:18','Gašper E66');
+insert into auto_device (addr, name) values ('00:22:5F:97:7E:F9','Dell Wireless 370 Bluetooth Mini-card');
+insert into auto_device (addr, name) values ('90:4C:E5:FD:60:B0','MONTIRAT');
+
+Database Sanitizer:
+
+

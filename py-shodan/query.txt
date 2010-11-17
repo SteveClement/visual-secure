@@ -1,0 +1,2 @@
+cat constituency.ip.digged.txt |grep IN |grep -v \; |grep -v CNAME
+

@@ -1,0 +1,6 @@
+steve:$apr1$OAAsDT7t$fzh46lCaTv8zDN4hmCbBZ0
+johnny:$apr1$2jCf46um$xUBRRYy1Ym0Q4xM/0GHg3/
+david:$apr1$HdvOhCYP$XAEzBYIB2brSEKwozaxjy1
+georges:$apr1$xGOW2ntf$M187Y2Axx.uSkQufeLD.X1
+caro:$apr1$sftSBjSl$lunZ3HzAEZLeSIY5je3WY.
+guest:$apr1$OuXDd1rl$v5ZYl3LpwhI070E1zjg7R1

@@ -1,0 +1,13 @@
+bt_test will enumerate all adapters on a PC and make an assumption about the vendor to group the adapters.
+Parallell Scanning will occur on all adapters and the return values will be added to an SQLite DB.
+Every scan will receive a Unique ID and statistics will be produced about the Scan Session.
+
+Stats:
+
+- Scan Time
+- Devices Seen (MAC)
+- Devices Named (Name)
+
+CREATE TABLE tblscan scan_id, timestamp, mac_device, scan_time, mac_scan, mac_name
+CREATE TABLE tblmac mac_id, mac_addr, vendor
+

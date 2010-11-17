@@ -1,0 +1,204 @@
+########################################################################
+# Licensing:                                                           #
+# All graphics are Creative Commons a part if otherwise noted.         #
+# The Code is released under the GPLv3.                                #
+# Please respect this agreement.                                       #
+########################################################################
+
+bt_fun has been created to show how easy targeted attacks can be and why trust does matter
+
+you need to install the following packages on a clean Ubunut Install:
+
+sudo apt-get install python-lightblue python-bluetooth sqlite3 python-pysqlite2 python-apsw python-obexftp python-vobject python-twisted
+
+export BTADAPTER=`dbus-send --system --dest=org.bluez --print-reply / org.bluez.Manager.DefaultAdapter | tail -1 | sed 's/^.*"\(.*\)".*$/\1/'`
+dbus-send --system --dest=org.bluez --print-reply $BTADAPTER org.bluez.Adapter.GetProperties
+dbus-send --system --dest=org.bluez --print-reply $BTADAPTER org.bluez.Adapter.SetProperty string:Name variant:string:poo
+dbus-send --system --dest=org.bluez --print-reply $BTADAPTER org.bluez.Adapter.SetProperty string:Discoverable variant:boolean:true
+dbus-send --system --dest=org.bluez --print-reply / org.bluez.Manager.ListAdapters
+dbus-send --system --dest=org.bluez --print-reply / org.bluez.Manager.FindAdapter string:hci0
+
+Proximity via RSSI. (Received Signal Strength indication)
+RSSI signal levels are unitless so we can strip any signs which makes reading outputs easier.
+it is defined from 0-255 so assuming 0==close-by and 255 far away we can get an indication where the device is.
+
+Plot Bluetooth Device on 1024x768 canvas.
+Use Funny BlueTOOTH sketch with the Name of the Device under it.
+
+Devices will stay there for 10minutes and fade away during the 10 minutes and will flash briefly when reappearing.
+
+4 USB devices
+
+	North
+	  |
+West	 <|>	East
+	  |
+	South
+
+In order to plot a device on the map take the top 2 Signal Strength Values.
+
+A lot of randomness needs to get into this and we split the whole thing into 6 quadrants.
+
+Problem situations:
+
+West/East|North/South -> To keep it easy just put the logo closest to whatever bearing the signal was strongest.
+
+Normal situations:
+
+North/East	-> Q1 -> y/x
+Sout/East	-> Q2 -> y/x
+South/West	-> Q3 -> y/x
+North/West	-> Q4 -> x/y
+
+1024x768 into 6 Quadrants 
+
+Main 4 quadrant sizes: 512x384
+
+2 remaining quadrants will be a 512x384 quadrant centered 
+
+Approximate RSSI Signal Strength meaning:
+around 20k samples RSSI ranges from: -91 to 119
+
+
+
+
+Blue Snarf
+
+To download the entire address book in one go:
+
+obexftp -b C8:97:9F:C9:B1:77 -g telecom/pb.vcf
+
+ToDo
+
+- implement Bluetooth Device selector
+- scan for devices and save to list
+ - timestamp scans
+ - separate table for device count
+- AT command list (on sony ericsson AT* displays all available commands without AT)
+- Custom AT command
+- Command-line only version
+- AT Command detection
+- easy obexftp download phonebook
+
+AT Commands to investigate:
+
+AT+CLAC
+
+SuperBlueTooth Features.
+
+bt_info is first probing the phone to establish a feature set and then offers a selection of "services"
+
+Some I have found are:
+
+nokia
+
+Connection
+Gives you the UTF-8 status of the Connection
+and the list of Disabled functions
+
+Informations
+Gives Battery Info in % and whether inserted
+Signal level in - dBM
+Network
+Phone - blank on nokia
+IMEI - blank on nokia
+IMSI - blank on nokia
+Firmware - blank
+Phone - status: READY ;)
+Connected to model - blank on nokia
+
+Calls
+Dial Number
+Hang Up Call
+Call Hold
+Dial Last Dialed
+
+Keys
+Joystick
+Control
+Numbers
+Java
+- Loads the different key sets and gives you the option to press them
+
+Pressed Keys
+Key logger
+
+Phonebook
+Gives you access to the phonebook
+
+Reading SMS
+Downloads SMS from Phone (Errors on nokia)
+
+Phone Functionality
+via relevant AT commands the phone can be "locked" down by disabling RF etc...
+(some error on nokia)
+
+Locks
+No data and error on nokia
+
+Clip
+Enable disable Clip
+
+Clir
+Enable disable Automate Clir
+
+Operator
+No data and error on nokia
+
+Operations >
+Automatic key lock
+Random time and date
+Random alarm clock
+
+Custom Command
+Turn off Phone (SE)
+Master Reset
+Available AT Commands
+
+Disabled functions on nokia:
+Ringing
+Change Language
+Silent Mode
+Ring Volume
+Alarms
+Clock
+Profiles
+Java
+Media Player
+Text
+SE Applications
+Calendar
+Key Sound
+Temperature
+My Devices
+Volume Level
+Memory Status
+Radio Icon
+Keylock
+
+C903
+
+Disabled Functions:
+Calendar
+
+
+Development system:
+
+  python packages installed:
+
+  ls /usr/lib/pymodules/python2.6
+  dpkg -l |grep python-
+
+
+Toolkit AV:
+
+http://www.spywareremove.com/spyware_images/spywaresecure_img1.jpg
+http://www.lancelhoff.com/wp-content/uploads/2008/09/antimalware-2009.jpg
+http://malwareremoval.files.wordpress.com/2008/12/antivirus2009.jpg
+
+
+Online Scams:
+
+http://lu.funtest.me/index2.php?a=561&s=subid&z=10c5c9cfe32df8a32144ac2b25d919d3
+a=SCAM_TYPE
+

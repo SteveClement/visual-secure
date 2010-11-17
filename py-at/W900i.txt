@@ -1,0 +1,416 @@
+ 1  [Prometheus]     Address: 00:12:EE:D1:48:27
+Choose Device or 0 to repeat scan1
+
+-- Select device, 0 to repeat scan or q to quit --
+
+
+Found 11 services on 00:12:EE:D1:48:27
+
+Show Bluetooth Profiles supported? y|ny
+BT Profile: None
+    Host:        00:12:EE:D1:48:27
+    Description: Sony Ericsson W900
+    Provided By: None
+    Protocol:    None
+    channel/PSM: None
+    svc classes: ['1200'] 
+    profiles:    [] 
+    service id:  None 
+
+BT Profile: Dial-up Networking
+    Host:        00:12:EE:D1:48:27
+    Description: None
+    Provided By: None
+    Protocol:    RFCOMM
+    channel/PSM: 1
+    svc classes: ['1103', '1201'] 
+    profiles:    [('1103', 256)] 
+    service id:  E001 
+
+BT Profile: Serial Port
+    Host:        00:12:EE:D1:48:27
+    Description: None
+    Provided By: None
+    Protocol:    RFCOMM
+    channel/PSM: 2
+    svc classes: ['1101'] 
+    profiles:    [] 
+    service id:  E002 
+
+BT Profile: HF Voice Gateway
+    Host:        00:12:EE:D1:48:27
+    Description: None
+    Provided By: None
+    Protocol:    RFCOMM
+    channel/PSM: 3
+    svc classes: ['111F', '1203'] 
+    profiles:    [('111E', 257)] 
+    service id:  E003 
+
+BT Profile: HS Voice Gateway
+    Host:        00:12:EE:D1:48:27
+    Description: None
+    Provided By: None
+    Protocol:    RFCOMM
+    channel/PSM: 4
+    svc classes: ['1112', '1203'] 
+    profiles:    [('1108', 256)] 
+    service id:  E004 
+
+BT Profile: OBEX Object Push
+    Host:        00:12:EE:D1:48:27
+    Description: None
+    Provided By: None
+    Protocol:    RFCOMM
+    channel/PSM: 5
+    svc classes: ['1105'] 
+    profiles:    [('1105', 256)] 
+    service id:  E005 
+
+BT Profile: OBEX File Transfer
+    Host:        00:12:EE:D1:48:27
+    Description: None
+    Provided By: None
+    Protocol:    RFCOMM
+    channel/PSM: 6
+    svc classes: ['1106'] 
+    profiles:    [('1106', 256)] 
+    service id:  E006 
+
+BT Profile: OBEX SyncML Client
+    Host:        00:12:EE:D1:48:27
+    Description: None
+    Provided By: None
+    Protocol:    RFCOMM
+    channel/PSM: 7
+    svc classes: ['00000002-0000-1000-8000-0002EE000002'] 
+    profiles:    [] 
+    service id:  E007 
+
+BT Profile: OBEX IrMC Sync Server
+    Host:        00:12:EE:D1:48:27
+    Description: None
+    Provided By: None
+    Protocol:    RFCOMM
+    channel/PSM: 8
+    svc classes: ['1104'] 
+    profiles:    [('1104', 256)] 
+    service id:  E008 
+
+BT Profile: NAP service
+    Host:        00:12:EE:D1:48:27
+    Description: NAP description
+    Provided By: None
+    Protocol:    L2CAP
+    channel/PSM: 15
+    svc classes: ['1116'] 
+    profiles:    [('1116', 256)] 
+    service id:  None 
+
+BT Profile: Mouse & Keyboard
+    Host:        00:12:EE:D1:48:27
+    Description: Remote Control
+    Provided By: Sony Ericsson
+    Protocol:    L2CAP
+    channel/PSM: 17
+    svc classes: ['1124'] 
+    profiles:    [('1124', 256)] 
+    service id:  None 
+
+Could not find Dial Up Networking port.
+Or DUN port is busy.
+Switch the target's Bluetooth off then on and retry
+>>> s.send("AT*\r")
+4
+>>> print s.recv(1024)
+AT*
+&F
+*
+*EAPN
+*EAPP
+*EAPS
+*EBCA
+*EDIF
+*EDST
+*EIPS
+*EKEY
+*EKSR
+*ELIB
+*EMEM
+*EMWS
+*ESKL
+*ESKS
+*EVAA
+*SECHA
+*SELOG
+*SEPING
++BLDN
++CALA
++CALD
++CAPD
++CCLK
++CGMM
++CGMR
++CHLD
++CHUP
++CIND
++CKPD
++CLCK
++CLIP
++CMAR
++CMER
++CPBF
++CPBR
++CPBS
++CPBW
++CSIL
++CSTA
++GMR
++WS46
+A
+D
+H
+Z
+*SEMP
+*SEMPIR
+*SEFIN
+*SEFEXP
+*SEMOD
+*SEREDI
+*SEFRY
+*EWBA
+*EWCT
+*EWDT
++CLAN
+*SEAM
+*SEUIS
+*SETICK
+*SEDEL
+*SEGUP
+*SEGAUGE
+*SEYNQ
+*SEONO
+*SELIST
+*SESAF
+*SEFORM
+*SESLE
+*SERSK
+*SESTRI
+*SEIMAGE
+*SEDATE
+*SELERT
+*SEBIC
+*SEFUNC
++BRSF
++BINP
++BVRA
++NREC
+*ECBP
++VGS
++VGM
+*EJAVA
++CSCA
++CSAS
++CRES
+*SEACC
+*SEACID
+*SEAUDIO
+*SEAULS
++CLVL
++CMUT
++CRSL
++CRMP
+*SEVOL
+*SEVOLIR
+
+&F
+*
+*CPI
+*EACS
+*ECAM
+*ECDF
+*ECSCA
+*EIBA
+*EKSE
+*EPEE
+*EPHD
+*ESOM
+*STKC
+*STKE
+*STKR
++BLDN
++CACM
++CAMM
++CAOC
++CBC
++CCFC
++CCLK
++CCWA
++CFUN
++CGSMS
++CGSN
++CHUP
++CIMI
++CIND
++CKPD
++CLAC
++CLCC
++CMEC
++CMER
++CMGC
++CMGD
++CMGF
++CMGL
++CMGR
++CMGS
++CMGW
++CMMS
++CMSS
++CMUT
++CNMI
++CNUM
++COPN
++COPS
++CPAS
++CPBF
++CPBR
++CPBS
++CPBW
++CPIN
++CPMS
++CPOL
++CPUC
++CPWD
++CREG
++CRES
++CRSM
++CSAS
++CSCA
++CSCB
++CSMS
++CSQ
++CSSN
++CUSD
++VGM
++VGS
++VTS
+A
+D
+H
+Z
+/
+&C
+&D
+&F
+&W
+*
+*EDEBUGMUX
+*EIAAUR
+*EIAAUW
+*EIABTR
+*EIABTW
+*EIAC
+*EIACSR
+*EIACSW
+*EIAD
+*EIADNSV6R
+*EIADNSV6W
+*EIAIPCPR
+*EIAIPCPW
+*EIALCPR
+*EIALCPW
+*EIAPSR
+*EIAPSSR
+*EIAPSSW
+*EIAPSW
+*EIAR
+*EIARUTD
+*EIARUTR
+*EIARUTW
+*EIAW
+*EINA
+*ELIN
+*EOBEX
+*ESIR
+*ETUP
++CBST
++CDIP
++CEER
++CGACT
++CGATT
++CGCLASS
++CGCMOD
++CGCMOD
++CGDATA
++CGDATA
++CGDCONT
++CGDSCONT
++CGEQMIN
++CGEQNEG
++CGEQNEG
++CGEQREQ
++CGEREP
++CGMI
++CGMM
++CGMR
++CGPADDR
++CGPADDR
++CGQMIN
++CGQREQ
++CGREG
++CGTFT
++CHSC
++CHSD
++CHSN
++CHSR
++CHSU
++CHUP
++CLAC
++CLIP
++CLIR
++CMEE
++CMUX
++COLP
++CPROT
++CR
++CRC
++CRLP
++CSCS
++CV120
++CVHU
++DR
++DS
++FCLASS
++GCAP
++GMI
++GMM
++GMR
++ICF
++IFC
++ILRR
++IPR
+A
+D
+E
+H
+I
+L
+M
+O
+P
+Q
+S0
+S10
+S2
+S3
+S4
+S5
+S6
+S7
+S8
+T
+V
+X
+Z
+
+OK

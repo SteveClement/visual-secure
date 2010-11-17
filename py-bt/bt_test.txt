@@ -1,0 +1,12 @@
+bt_test will enumerate all adapters on a PC and make an assumption about the vendor to group the adapters.
+Parallell Scanning will occur on all adapters and the return values will be added to an SQLite DB.
+Every scan will receive a Unique ID and statistics will be produced about the Scan Session.
+
+Stats:
+
+- Scan Time
+- Devices Seen (MAC)
+- Devices Named (Name)
+
+http://www.coffer.com/mac_find/?string=00:23:6C:AE:7B:41
+

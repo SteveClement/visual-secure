@@ -1,0 +1,12 @@
+bt_fun is the main database with the following tables
+
+AT_commands
+This is a general list of common at commands for Nokia, LG and Sony Erricsson Phones please complete list and omit the leading AT
+create table AT_commands ATCommand, Manufacturer, Model, Comment
+
+create table phone_list Address, Manufacturer, Model, Comment
+An optional list of phones that you can populate
+
+create table auto_phone Address, DateTime
+
+
