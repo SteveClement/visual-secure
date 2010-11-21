@@ -10,3 +10,25 @@ Switched to git
 
 * Always enter a meaningfull comment when committing
 * Backups are important
+
+== Files and Direcotries ==
+
+* bt
+* BT_Location
+* gui
+* NOTES
+* pwdtest
+* pwdtest-touch
+* py-at
+* py-bt
+* py-fb
+* py-gps
+* py-lab
+* py-pwdtest
+* py-shodan
+* py-ws
+* README
+* ticket
+* UserAccount-passwords.txt.gz
+* VisualSecureToolkit.mm
+* wikisafe.py
