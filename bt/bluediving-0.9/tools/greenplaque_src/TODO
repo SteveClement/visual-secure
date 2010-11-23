@@ -1,6 +1,0 @@
-implement true multi dongle functions. 
-- certain dongles scan 
-- certain dongles use sdptool 
-- certain dongle does l2ping
-- etc 
-
