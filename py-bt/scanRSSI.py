@@ -26,7 +26,6 @@ def printpacket(pkt):
         sys.stdout.write("%02x " % struct.unpack("B",c)[0])
     print 
 
-
 def read_inquiry_mode(sock):
     """returns the current mode, or -1 on failure"""
     # save current filter
