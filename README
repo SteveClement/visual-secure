@@ -1,3 +1,10 @@
+The visual secure toolkit is a quick hack to Demo common and not so common attacks on IT systems.
+
+It is an OpenSource toolkit and not to be used on any Live networks.
+
+/!\ Use at your own risk and peril the code is NOT safe for Production networks and there are some vulnerabilities in the code as well.
+
+The purpose was always to have an "offline" system for the sake of demoing potential attacks.
 
 
 External Repos:
@@ -27,8 +34,13 @@ Switched to git
 * py-pwdtest
 * py-shodan
 * py-ws
+* malware
 * README
 * ticket
 * UserAccount-passwords.txt.gz
 * VisualSecureToolkit.mm
 * wikisafe.py
+
+Tools used:
+
+bsh - install java scripting shell
