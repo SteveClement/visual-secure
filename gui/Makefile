@@ -1,4 +1,4 @@
-all: edit-main edit-main_scan edit-main_connected edit-guis_done_hard
+all: edit-main edit-main_scan edit-main_connected
 
 clean: 
 	rm -f *.bak
@@ -7,8 +7,8 @@ clean:
 commit:
 	git commit -a
 
-edit-guis_done_hard:
-	./guibuilder-linux-ix86-20070129 --directory . --language 'tkinter' --project Guis_done_hard
+edit-test_bed:
+	./guibuilder-linux-ix86-20070129 --directory . --language 'tkinter' --project test_bed
 
 edit-main_connected:
 	./guibuilder-linux-ix86-20070129 --directory . --language 'tkinter' --project main_connected
