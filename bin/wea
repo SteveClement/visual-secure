@@ -77,6 +77,8 @@ tar cvfz ${WEANAME}.tar.gz ${WEANAME}
 if [ ${ENCRYPT} == 0 ]
 then
    echo "we do encrypt"
+   gpg --import ../cfg/circl.asc
+   gpg --yes --recipient info@circl.lu -e ${WEANAME}.tar.gz
 else
    echo "we don't encrypt"
 fi
