@@ -1,0 +1,83 @@
+#!/bin/bash
+#
+# Web Evidence Acquisition (WEA)
+#
+# Copyright (C) 2011 Alexandre Dulaunoy
+#
+# Copyright (C) 2011 CIRCL Computer Incident Response Center Luxembourg (smile gie)
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+
+WEAVER=0.1
+WEADIR=../evidence/
+ENCRYPT=1
+while getopts ":e" opt; do
+        case $opt in
+          e)
+                ENCRYPT=0
+                echo "encryption required"
+          ;;
+        esac
+        shift $((OPTIND-1)); OPTIND=1
+done
+#URL (trailing option)
+URL=$*
+echo "Web Evidence Acquisition ${WEAVER} for ${URL}"
+echo "Sync time..."
+sudo ntpdate time.belnet.be
+
+echo "Create evidence directory..."
+if ! [ -e "${WEADIR}" ]
+then
+        mkdir ${WEADIR}
+fi
+
+SHA1=`echo ${URL} | sha1sum | cut -f1 -d' '`
+WEANAME=`date +%Y%m%d`-${SHA1}
+echo ${WEANAME}
+
+WEAPATH=${WEADIR}/${WEANAME}/
+
+if ! [ -e "${WEAPATH}" ]
+then
+        mkdir ${WEAPATH}
+fi
+
+cd ${WEAPATH}
+
+echo `date` "Web Evidence Acquisition ${WEAVER} for ${URL}" >>logs
+echo `date` "Starting pcap..." >>logs
+sudo tcpdump -s0 -ieth1 -w capture.cap &
+
+mkdir mirror && cd mirror
+
+echo `date` "Mirroring ${URL}..." >>../logs
+wget --page-requisites --convert-links -p ${URL} >>../logs
+cd ..
+
+echo `date` "Stopping pcap..." >>logs
+sudo killall tcpdump
+
+cd ..
+tar cvfz ${WEANAME}.tar.gz ${WEANAME}
+
+#PGP encrypt evidence file
+if [ ${ENCRYPT} == 0 ]
+then
+   echo "we do encrypt"
+else
+   echo "we don't encrypt"
+fi
+
