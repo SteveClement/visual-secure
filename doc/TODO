@@ -5,5 +5,5 @@
   instance and interface it to run a "Save As...". Checked the API. It works
   for a controlling firefox from a TCP interface but can't find a way to call
   some inner Firefox functions.
-
+- Improve GUI especially reporting
 
