@@ -1,18 +1,23 @@
 # Web Evidence Acquisition
 
 WEA is a software to acquire evidence from suspicious website.
-The software acquire a mirror of the URL mentioned along with
+The software acquires a mirror of the URL mentioned along with
 a network pcap capture.
 
-## Usage
+## Usage via command line
 
-wea -e <url>
+./wea -e <url>
 
       -e encrypt default with default PGP key
 
 Example
+      cd ./bin/
+      ./wea -e http://www.foo.be/
 
-      wea -e http://www.foo.be/
+## Usage via GUI
+
+      cd ./bin/
+      ./gwea
 
 ## Evidence file structure
 
@@ -20,6 +25,14 @@ Example
     ../evidence/date-URLSHA1/logs
     ../evidence/date-URLSHA1/mirror/
     ../evidence/date-URLSHA1.tar.gz
+
+## Dependencies
+
+  * Python
+  * Python-gtk
+  * tcpdump
+  * wget
+  * bash
 
 ## Authors
 
