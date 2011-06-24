@@ -8,16 +8,18 @@ a network pcap capture.
 
 wea -e <url>
 
- -e encrypt default with default PGP key
+      -e encrypt default with default PGP key
 
-wea -e http://www.foo.be/
+Example
+
+      wea -e http://www.foo.be/
 
 ## Evidence file structure
 
-../evidence/date-URLSHA1/
-../evidence/data-URLSHA1/logs
-../evidence/data-URLSHA1/mirror/
-../evidence/date-URLSHA1.tar.gz
+    ../evidence/date-URLSHA1/
+    ../evidence/data-URLSHA1/logs
+    ../evidence/data-URLSHA1/mirror/
+    ../evidence/date-URLSHA1.tar.gz
 
 ## Authors
 
