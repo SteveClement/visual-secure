@@ -3,7 +3,9 @@
 import pygtk
 pygtk.require('2.0')
 import gtk
+image = gtk.Image()
 import subprocess
+
 
 class WEA:
     def enter_callback(self, widget, entry):
@@ -28,6 +30,14 @@ class WEA:
         vbox = gtk.VBox(False, 0)
         window.add(vbox)
         vbox.show()
+        image = gtk.Image()
+        image.set_from_file("circl.png")
+        image.show()
+
+        button = gtk.Button()
+        button.add(image)
+        button.show()
+        vbox.pack_start(button)
 
 
         entry = gtk.Entry()
@@ -35,6 +45,7 @@ class WEA:
         entry.connect("activate", self.enter_callback, entry)
         entry.set_text("http://www.circl.lu/")
         entry.select_region(0, len(entry.get_text()))
+
         vbox.pack_start(entry, True, True, 0)
         entry.show()
 
