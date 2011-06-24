@@ -48,20 +48,24 @@ SHA1=`echo ${URL} | sha1sum | cut -f1 -d' '`
 WEANAME=`date +%Y%m%d`-${SHA1}
 echo ${WEANAME}
 
-WEAPATH=${WEADIR}/${WEANAME}/
+cd ${WEADIR}
 
-if ! [ -e "${WEAPATH}" ]
+WEAPATH=./${WEANAME}/
+
+if ! [ -e "./${WEAPATH}" ]
 then
-        mkdir ${WEAPATH}
+        mkdir ./${WEAPATH}
 fi
 
+echo "POF..." ${WEAPATH}
 cd ${WEAPATH}
 
 echo `date` "Web Evidence Acquisition ${WEAVER} for ${URL}" >>logs
 echo `date` "Starting pcap..." >>logs
 sudo tcpdump -s0 -iany -w capture.cap &
 
-mkdir mirror && cd mirror
+mkdir mirror
+cd mirror
 
 echo `date` "Mirroring ${URL}..." >>../logs
 wget --page-requisites --convert-links -p ${URL} >>../logs
