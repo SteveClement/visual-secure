@@ -59,7 +59,7 @@ cd ${WEAPATH}
 
 echo `date` "Web Evidence Acquisition ${WEAVER} for ${URL}" >>logs
 echo `date` "Starting pcap..." >>logs
-sudo tcpdump -s0 -ieth1 -w capture.cap &
+sudo tcpdump -s0 -iany -w capture.cap &
 
 mkdir mirror && cd mirror
 
