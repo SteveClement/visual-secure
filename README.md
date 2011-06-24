@@ -17,8 +17,8 @@ Example
 ## Evidence file structure
 
     ../evidence/date-URLSHA1/
-    ../evidence/data-URLSHA1/logs
-    ../evidence/data-URLSHA1/mirror/
+    ../evidence/date-URLSHA1/logs
+    ../evidence/date-URLSHA1/mirror/
     ../evidence/date-URLSHA1.tar.gz
 
 ## Authors
