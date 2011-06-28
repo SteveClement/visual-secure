@@ -1,3 +1,11 @@
+== from LisaStopLine discussion ==
+
+- traceroute-circl output in the logs
+- whois output of all associated domains/IP address
+- make mirroring optional
+- site interface to include the data
+
+== from CIRCL ==
 
 - Add a screenshot of the website using a headless Firefox to complement
   the wget mirror.
