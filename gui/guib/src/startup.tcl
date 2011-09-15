@@ -18,8 +18,8 @@ exec wish "$0" ${1+"$@"}
 package require Tcl 8.4
 package require BWidget
 package require tile
-package require widget::dialog 1.2
-package require widget::scrolledwindow
+##package require widget::dialog 1.2
+##package require widget::scrolledwindow
 
 # Use BWidget's theme set
 Widget::theme 1
