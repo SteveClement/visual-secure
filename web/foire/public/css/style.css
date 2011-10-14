@@ -1,0 +1,93 @@
+header, footer, section, hgroup, nav
+                   { display:block; }
+
+html               { background:#121212; }
+body               { background:#121212; color:#c4c4c4; font:normal normal normal 24px/36px 'Trebuchet MS', Trebuchet, sans-serif; margin:0; overflow-x:hidden; padding:0; text-align:center; }
+header             { background:#292929 url('../images/header.png') no-repeat top center; margin:0 0 77px; padding:40px 0 19px; text-align:center; }
+header h1          { margin:0 0 2px; }
+header h2          { margin:2px 0 0; }
+
+fieldset           { border:none; margin:0; padding:0; }
+legend             { display:block; padding:0; width:100%; }
+legend label, legend span, section h1 
+                   { color:#faa41a; display:block; font-size:30px; font-weight:bold; line-height:30px; margin:0 auto; padding:0 0 40px; text-align:center; width:70%; }
+img                { border:none; }
+
+#step1, #step2, #step3
+                   { display:none; }
+.this              { display:block !important; }
+
+/* Step 1 ----------------------------------------------------------------- */
+#step1 p           { margin:0; padding:74px 0 0; }
+output             { color:#faa41a; font-size:32px; font-weight:bold; }
+#length            { position:absolute; left:-9999px; }
+#slider-out        { background:url('../images/slider.png') no-repeat; height:83px; line-height:83px; margin:40px auto 0; padding:0 30px 0; text-align:left; width:994px; }
+#slider            { height:83px; position:relative; }
+.ui-slider-handle  { background:url('../images/slider-handler.png') no-repeat; display:inline-block; height:66px; margin-left:-50px; outline:none; position:absolute; width:119px; }
+.ui-slider-handle.ui-state-active
+                   { background-position:0 -66px; }
+.ui-slider-range   { background:url('../images/slider-range.png') repeat-x; display:inline-block; height:40px; position:absolute; top:11px; }
+
+/* Step 2 ----------------------------------------------------------------- */
+#step2             { position:relative; }
+samp               { color:#faa41a; font-family:'Trebuchet MS', Trebuchet, sans-serif; }
+fieldset ul        { border-bottom:1px solid #444; list-style:none; margin:20px 0 0; padding:0; }
+fieldset li        { border-top:1px solid #444; margin:0; padding:0; }
+li label           { cursor:pointer; display:block; padding:11px 0; }
+li label:hover     { background:rgba(255,255,255,.1); }
+label span         { background:url('../images/check.png') no-repeat 0 -88px; display:block; margin:0 auto; padding:22px 0 29px 130px; text-align:left; width:21em; }
+label input[type=checkbox]
+                   { left:-9999px; position:absolute; }
+label input[type=checkbox]:checked + span
+                   { background-position:0 0; }
+
+label input.checked + span
+                   { background-position:0 0; }
+
+#loading           { background:rgba(0, 0, 0, 0.7); -moz-border-radius:10px 10px 10px 10px; -webkit-border-radius:10px 10px 10px 10px; border-radius:10px 10px 10px 10px; display:none; left:50%; margin-left:-46px; margin-top:-31px; padding:30px 60px; position:absolute; top:20%; }
+#step2.loading #loading
+                   { display:block; }
+
+#warning           { background:rgba(250,164,26,.9); -moz-border-radius:10px 10px 10px 10px; -webkit-border-radius:10px 10px 10px 10px; border-radius:10px 10px 10px 10px; color:#000; left:50%; margin-left:-420px; padding:30px 60px; position:absolute; text-align:left; text-shadow:1px 1px 0 rgba(255,255,255,.5); top:40%; width:720px; }
+
+/* Step 3 ----------------------------------------------------------------- */
+table              { border-bottom:1px solid #444; border-collapse:collapse; table-layout:fixed; width:100%; }
+thead th           { color:rgba(196,196,196,.5); padding:11px 20px; text-align:right; }
+thead th + th      { text-align:left; }
+tbody tr           { border-top:1px solid #444; }
+tbody th           { color:#faa41a; font-size:18px; font-weight:normal; padding:0 20px; text-align:right; }
+td                 { padding:10px 20px 13px; text-align:left; }
+strong             { color:#faa41a; font-weight:normal; }
+
+.legend            { background:rgba(250,164,26,.9); -moz-border-radius:10px 10px 10px 10px; -webkit-border-radius:10px 10px 10px 10px; border-radius:10px 10px 10px 10px; color:#000; display:none; font-size:24px; left:50%; margin-left:-420px; padding:30px 60px; position:absolute; text-align:left; text-shadow:1px 1px 0 rgba(255,255,255,.5); top:40%; width:720px; }
+
+.legend-callout    { background:url('../images/help.png') no-repeat top right; -moz-border-radius:10px; color:#FAA41A; margin-right:-13px; padding:10px 40px 10px 20px; text-decoration:none; }
+.legend-callout:hover
+                   { background-color:rgba(255,255,255,.1); background-position:right -43px; }
+
+/* Steps ------------------------------------------------------------------ */
+#steps             { height:42px; line-height:42px; margin:0 0 28px; }
+#steps span        { background:url('../images/steps.png') no-repeat 0 0; color:#c4c4c4; font-size:23px; margin-left:12px; padding:7px 14px 6px 15px; text-align:center; }
+#steps span.current{ background-position:-41px 0; color:#121212; }
+#next              { background:url('../images/suivant.png') no-repeat; color:#000; margin-left:30px; padding:16px 41px; text-decoration:none; }
+#next:hover        { background-position:0 -62px; color:#fff; }
+#next:lang(en)     { padding:16px 56px; }
+#next:lang(de)     { padding:16px 45px; }
+#back              { background:url('../images/back.png') no-repeat; color:#000; margin-left:30px; padding:16px 36px; text-decoration:none; }
+#back:lang(en)     { padding:16px 86px; }
+#back:lang(de)     { padding:16px 75px; }
+#back:hover        { background-position:0 -62px; color:#fff; }
+
+
+/* Footer ----------------------------------------------------------------- */
+footer             { bottom:0; position:absolute; width:100%; }
+#credits           { float:left; margin:0; padding:38px 60px 0; }
+#credits img       { margin-right:64px; }
+#langs             { background:#292929; height:70px; line-height:70px; margin:0; padding:20px 33px 20px 0; text-align:right; }
+#langs ul          { list-style:none; margin:0; padding:0; }
+#langs li          { display:inline; text-indent:-9999px; }
+#langs a           { -moz-border-radius:7px; -webkit-border-radius:7px; border-radius:7px; outline:none; padding:17px 15px 18px; }
+#langs a:hover     { background:rgba(255,255,255,.1); }
+#langs a:not([href])
+                   { background:#faa41a; }
+#langs img         { vertical-align:middle; }
