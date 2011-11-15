@@ -23,7 +23,7 @@ cursor = connection.cursor()
 cursor.execute('CREATE TABLE auto_device (addr TEXT, name TEXT, RSSI INTEGER, DateTime DATE)')
 connection.commit
 
-impoirt datetime, time
+import datetime, time
  time.strftime("%Y-%m-%d %H:%M")
 
 cursor.execute('SELECT * FROM names')

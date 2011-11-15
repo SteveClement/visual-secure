@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 #importing the required libraries
 import matplotlib
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas

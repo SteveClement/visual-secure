@@ -1,6 +1,8 @@
+#!/usr/local/bin/python
 #importing the required libraries
 import matplotlib
-matplotlib.use('macosx')
+matplotlib.use('tkagg')
+#matplotlib.use('macosx')
 #from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 #from matplotlib.figure import Figure
 import matplotlib.mlab as mlab
