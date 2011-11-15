@@ -3,8 +3,8 @@ from pysqlite2 import dbapi2 as sqlite
 import string
 import pprint
 
-SMSdb = 'sms.db'
-ticketdb = 'tickets.db'
+SMSdb = 'data/sms.db'
+ticketdb = 'data/tickets.db'
 
 db_con = sqlite.connect(SMSdb)
 db_cursor = db_con.cursor()

@@ -3,23 +3,22 @@ import matplotlib
 matplotlib.use('tkagg')
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
+import datetime
+import matplotlib.dates as mdates
 from pysqlite2 import dbapi2 as sqlite
 import csv
 import pprint
 
-connection = sqlite.connect('tickets.db')
+connection = sqlite.connect('data/tickets.db')
 cursor = connection.cursor()
 cursor.execute('select * from tbltickets')
 
-with open('tickets.csv', 'wb') as fout:
+with open('data/tickets.csv', 'wb') as fout:
     writer = csv.writer(fout)
-    pprint.pprint(cursor.description)
     writer.writerow([ i[0] for i in cursor.description ]) # heading row
-    t = cursor.fetchall()
-    pprint.pprint(t)
-    writer.writerows(t)
+    writer.writerows(cursor.fetchall())
 
-r = mlab.csv2rec('tickets.csv')
+r = mlab.csv2rec('data/tickets.csv')
 
 fig = plt.figure()
 
@@ -37,8 +36,11 @@ ax.set_ylabel("Checksum",fontsize=12)
 # Display Grid.
 ax.grid(True,linestyle='-',color='0.75')
 
-ax.scatter(r.timesent,r.checksum,s=20,color='tomato');
+#ax.scatter(r.timesent,r.checksum,s=20,color='tomato');
+ax.scatter(r.checksum,r.ticketcount,s=20,color='tomato');
 
 plt.xticks(rotation=25)
+
+fig.autofmt_xdate()
 
 plt.show()
