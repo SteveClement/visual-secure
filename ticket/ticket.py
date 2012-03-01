@@ -3,11 +3,11 @@ import matplotlib
 matplotlib.use('tkagg')
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
-import datetime
 import matplotlib.dates as mdates
 from pysqlite2 import dbapi2 as sqlite
 import csv
 import pprint
+import datetime
 
 connection = sqlite.connect('data/tickets.db')
 cursor = connection.cursor()

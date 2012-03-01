@@ -1,2 +1,1 @@
-create table tbltickets (checksum TEXT, ticketcount TEXT,expiredate TEXT, expiretime TEXT, timesent TEXT);
-
+create table tbltickets (checksum INTEGER, ticketcount INTEGER,expiredate TEXT, expiretime TEXT, timesent TEXT);
