@@ -1,0 +1,200 @@
+<HTML><HEAD><TITLE></TITLE></HEAD>
+<SCRIPT Language="JavaScript">
+
+// URL parsing
+function QS(inputkeys, inputvalues)  {
+ this.keys=inputkeys;
+ this.values=inputvalues;
+} 
+function QSFind(QStr, key)  {
+ var value = null;
+ for (var i=0;i<QStr.keys.length;i++)  {
+	if (QStr.keys[i]==key)  {
+		value = QStr.values[i];
+		break;
+	}
+ }
+ return value;
+} 
+function ParseQS()  {
+ var query = window.location.search.substring(1);
+ var parameters = query.split("&");
+ var keys = new Array();
+ var values = new Array(); 
+  for (var i=0;i<parameters.length;i++)  {
+   var pos = parameters[i].indexOf('=');
+   if (pos >= 0)  {
+     var argname = parameters[i].substring(0,pos);
+     var value = parameters[i].substring(pos+1);
+     keys[i] = argname;
+     values[i] = value;
+   }
+ }
+ QString = new QS(keys,values);
+ return QString;
+}
+
+var errorstring="";
+var errorcode="";
+// AUTHWAS error
+if (errorstring.substring(0,22) == "Unknown message number") {
+        var x=errorcode.substring(6,10);
+        switch (x.substring(0,2)) {
+                case "09":
+                        var aC = document.cookie;
+                        var pos = aC.indexOf("AUTH_ID=");
+                        var errorUrl= "/WebBankingLogin/error.jsp?error="+x.substring(2,4);
+                        if (pos != -1) {
+                                authId = aC.substring(pos+8,pos+13);
+                                switch(authId) {
+                                case "ISI_01":
+                                        window.location="/reb0101"+errorUrl;
+                                        break;
+                                case "ISI_02":
+                                        window.location="/reb0101_02"+errorUrl;
+                                        break;
+                                default:
+                                        window.location="/reb0101"+errorUrl;
+                                        break;
+                                }
+                        }
+                        else {
+                        window.location="/reb0101"+errorUrl;
+                        }
+                        break;
+                case "17":
+                        var aC = document.cookie;
+                        var pos = aC.indexOf("AUTH_ID=");
+                        var errorUrl= "/WebBankingLogin/error.jsp?error="+x.substring(2,4);
+                        if (pos != -1) {
+                                authId = aC.substring(pos+8,pos+13);
+                                switch(authId) {
+                                case "ISI_01":
+                                        window.location="/reb0101"+errorUrl;
+                                        break;
+                                case "ISI_02":
+                                        window.location="/reb0101_02"+errorUrl;
+                                        break;
+                                default:
+                                        window.location="/reb0101"+errorUrl;
+                                        break;
+                                }
+                        }
+                        else {
+                        window.location="/reb0101"+errorUrl;
+                        }
+                        break;
+
+                default:
+                        window.location="/errors/isi_unexpected_error.html?error=";
+                        break;
+        }
+}
+
+// INTERNAL error
+else {
+   if ( "X" != "X") {
+      switch (errorstring) {
+         case "HPDIA0110E   An authentication mechanism module specific error occurred.":
+            window.location="/errors/auth_failure_error.html?error="+errorstring;
+            break;
+         case "HPDIA0100E   An internal error has occurred.":
+            window.location="/errors/auth_internal_error.html?error="+errorstring;
+            break;
+         // Wrong error code received from Authwas
+         case "HPDIA0101E   An unexpected error code was encountered.":
+            window.location="/errors/isi_unexpected_error.html?error="+errorstring;
+            break;
+         default:
+            window.location="/errors/auth_unexpected_error.html?error="+errorstring;
+         break;
+      }
+   }
+
+// no WebSEAL error
+else {
+   Querystring = ParseQS();
+
+   AuthType = QSFind(Querystring,"authid");
+   if ( AuthType == null )  {
+     window.location="/errors/authid_does_not_exist.html";
+     }
+   else  {
+     Location = QSFind(Querystring,"location");
+     Bypass = QSFind(Querystring,"bp");
+
+	if ( Bypass == null && ( Location == null || Location == "slave" ) )  {
+		var name = new Date();
+		var rootUrl = "https://webbanking.bgl.lu/";
+		var defaultUrl = rootUrl+"fr/Main.html?t=" + name.getTime();
+		var Url = null;
+
+		var aC = document.cookie;
+
+		var pos = aC.indexOf("wbklanguage=");
+
+		if (pos == -1) {
+			Url = defaultUrl;
+		} else {
+			lng = aC.substring(pos+15,pos+17);
+			if (lng == "fr" || lng == "en" || lng == "de") {
+				Url = rootUrl+lng+"/Main.html?t="+name.getTime();
+			} else {
+				Url = defaultUrl;
+			}
+		}
+		window.top.location= Url;
+	}
+	else {
+	var curDate = new Date();
+
+        switch (AuthType){
+        case "09" :
+                window.location='/reb0101/WebBankingLogin/'
+                document.cookie="AUTH_ID=ISI; path= /; domain=bgl.lu;";
+                document.cookie="LoadBalancer=; path= /reb0201/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                document.cookie="LoadBalancer=; path= /reb0202/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                break;
+
+        case "09_01" :
+                window.location='/reb0101/WebBankingLogin/'
+                document.cookie="AUTH_ID=ISI_01; path= /; domain=bgl.lu;";
+                document.cookie="LoadBalancer=; path= /reb0201/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                document.cookie="LoadBalancer=; path= /reb0202/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                break;
+        case "09_02" :
+                window.location='/reb0101_02/WebBankingLogin/'
+                document.cookie="AUTH_ID=ISI_02; path= /; domain=bgl.lu;";
+                document.cookie="LoadBalancer=; path= /reb0201/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                document.cookie="LoadBalancer=; path= /reb0202/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                break;
+
+        case "ISI" :
+                window.location='/reb0101/WebBankingLogin/'
+                document.cookie="AUTH_ID=ISI; path= /; domain=bgl.lu;";
+                document.cookie="LoadBalancer=; path= /reb0201/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                document.cookie="LoadBalancer=; path= /reb0202/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                break;
+
+        case "ISI_01" :
+                window.location='/reb0101/WebBankingLogin/'
+                document.cookie="AUTH_ID=ISI_01; path= /; domain=bgl.lu;";
+                document.cookie="LoadBalancer=; path= /reb0201/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                document.cookie="LoadBalancer=; path= /reb0202/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                break;
+        case "ISI_02" :
+                window.location='/reb0101_02/WebBankingLogin/'
+                document.cookie="AUTH_ID=ISI_02; path= /; domain=bgl.lu;";
+                document.cookie="LoadBalancer=; path= /reb0201/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                document.cookie="LoadBalancer=; path= /reb0202/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+                break;
+        default :
+                window.location='/errors/authid_not_supported.html'
+
+        }
+     }
+   }
+ }
+}
+</SCRIPT>
+<BODY></BODY></HTML>

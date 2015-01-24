@@ -1,0 +1,11 @@
+var MAX_a4cb7ee3 = '';
+MAX_a4cb7ee3 += "<"+"div id=\'ox_4cb1d95a19ea2d703125bfb8b8547405\' style=\'display: inline;\'><"+"img src=\'http://ads3.zap.lu/www/images/1x1.gif\' alt=\'\' title=\'\' border=\'0\' /><"+"/div>\n";
+MAX_a4cb7ee3 += "<"+"script type=\'text/javascript\'><"+"!--// <"+"![CDATA[\n";
+MAX_a4cb7ee3 += "var ox_swf = new FlashObject(\'http://ads3.zap.lu/www/images/skycraper.swf\', \'Advertisement\', \'120\', \'600\', \'6\');\n";
+MAX_a4cb7ee3 += "ox_swf.addVariable(\'clickTARGET\', \'_blank\');\n";
+MAX_a4cb7ee3 += "ox_swf.addVariable(\'clickTAG\', \'http%3A%2F%2Fads3.zap.lu%2Fwww%2Fdelivery%2Fck.php%3Foaparams%3D2__bannerid%3D28__zoneid%3D6__cb%3Dee94901ae4\');\n";
+MAX_a4cb7ee3 += "ox_swf.addParam(\'wmode\', \'opaque\');\n";
+MAX_a4cb7ee3 += "ox_swf.addParam(\'allowScriptAccess\',\'always\');\n";
+MAX_a4cb7ee3 += "ox_swf.write(\'ox_4cb1d95a19ea2d703125bfb8b8547405\');\n";
+MAX_a4cb7ee3 += "// ]]> --><"+"/script><"+"div id=\'beacon_28\' style=\'position: absolute; left: 0px; top: 0px; visibility: hidden;\'><"+"img src=\'http://ads3.zap.lu/www/delivery/lg.php?bannerid=28&amp;campaignid=22&amp;zoneid=6&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.zap.lu%2F_a%2F_users%2Floginform.html&amp;cb=ee94901ae4\' width=\'0\' height=\'0\' alt=\'\' style=\'width: 0px; height: 0px;\' /><"+"/div>\n";
+document.write(MAX_a4cb7ee3);

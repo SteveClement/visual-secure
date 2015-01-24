@@ -1,0 +1,109 @@
+/*.vpws_new {
+	color: #0376CE;
+	font-size: 80%;
+	font-style: italic;
+}*/
+
+.vpws_ac_over .vpws_new {
+	color: #DCECFF;
+}
+      
+.vpws_ac_results {
+	padding: 0px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #444;
+	border-right: 1px solid #777;
+	border-left: 1px solid #999;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+    text-align: left;
+}
+
+.vpws_ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.vpws_ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	color: #333333;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 17px;
+	overflow: hidden;
+}
+
+.vpws_ac_loading {
+	background: white url('indicator.gif') right center no-repeat;
+}
+
+.vpws_ac_odd {
+	background-color: #eee;
+}
+/* this is the part they've already typed in */
+.vpws_ac_results strong{
+	color: #000000;
+	font-weight: normal;
+	border-bottom: 1px dotted #0376CE;
+}
+
+/* this is the part of the word that is going to be filled based on what they've typed in */
+/* it does not appear on single-field bundles */
+.vpws_field_target {
+	color: #000000;
+	font-weight: bold;
+}
+
+.vpws_field_target strong{
+	font-weight: bold;
+}
+
+/* what they've typed so far */
+.vpws_ac_over strong{
+	color: #FFFFFF;
+	border-color: #DCECFF;
+}
+
+/* normal results and the field_target */
+.vpws_ac_results li.vpws_ac_over {
+	background-color: #0376CE;
+	color: #DCECFF;
+	border-color: #DCECFF;
+}
+
+.vpws_ac_over .vpws_field_target  {
+	background-color: #0376CE;
+	color: #FFFFFF;
+}
+	
+.vpws_profile {
+	color: #0376CE;
+	font-size: 90%;
+	font-style: italic;
+}
+
+.vpws_ac_over .vpws_profile {
+	background-color: #0376CE;
+	color: #FFFFFF;
+}
+
+.vpws_ac_over .vpws_profile:after {
+	content: " (profile)";
+	color: #DCECFF;
+}

@@ -1,0 +1,230 @@
+<html>
+<head>
+<title>spidery fun rev2</title>
+<script type="text/javascript" src="wz_jsgraphics.js"></script>
+</head>
+
+<body>
+<P id="status"></P>
+
+<!-- cnv1 and cnv2 are the front and back buffers -->
+<div id="cnv1" style="position:absolute;z-index:0;left:0px;top:0px;width:100%;height:100%;"></div>
+<div id="cnv2" style="position:absolute;z-index:1;left:0px;top:0px;width:100%;height:100%;"></div>
+<script type="text/javascript">
+<!--
+// Implements double-buffering, by using two identical canvas DIVs at the same
+// location, drawing to the invisible background DIV whenever the animation is
+// updated, and then switching the z-indices of these DIVs, so that the
+// updated background DIV becomes visible and the outdated foreground DIV is
+// hidden.
+
+var fps = 25;
+var delay = Math.floor(1000.0/fps);
+
+// number of vertices for spider
+var max_vert = 7;
+
+
+// Array of DIV references (for faster access)
+var buffers = [document.getElementById("cnv1"), document.getElementById("cnv2")];
+
+// Array of jsGraphics objects related to each of these DIVs
+var cnv = [new jsGraphics(buffers[0]), new jsGraphics(buffers[1])];
+
+// Index of DIV to be redrawn and to become the foreground DIV
+var index = 0;
+// reference to background canvas (back is what we draw to)
+var back;
+
+// canvas width and height, updated every frame
+var canH;
+var canW;
+
+cnv[0].setStroke(2);
+cnv[1].setStroke(2);
+
+drawframe();
+function drawframe()
+{
+    // reset status text
+    document.getElementById("status").innerHTML = "";
+
+    // prepare convenience variables	
+    canH = window.innerHeight;
+    canW = window.innerWidth;
+
+    back = cnv[index];
+
+    /* ACTUAL PAINTING */
+    drawtimeline(0.0,0.0,1.0,0.1,0);
+    drawspider(0.0,0.1,1.0,0.9,get_vertices(),get_properties("lb"),"#7C9FCA","#5a7da8");
+	
+    // this executes all painting steps set up above	
+    back.paint();
+    /* DONE ACTUAL PAINTING // */
+
+
+    // Exchange buffers by switching DIV z-index
+    buffers[index].style.zIndex = 1;
+    // Switch index of active DIV
+    index ^= 1;
+    buffers[index].style.zIndex = 0;
+    // Clear outdated DIV (which is from now on in the background)
+    cnv[index].clear();
+    window.setTimeout("drawframe()", delay);
+}
+
+
+// avoid redeclarations for speed
+var absX, absY, absW, absH, side, originX, originY, midX, midY, diameter, offset, outerradius, radius, step, temp1, temp2, chunk, angle, angleoffset;
+
+/* DRAWSPIDER
+   vertices: array of floats 0.0-1.0, arbitrary size >= 3
+   properties: array of strings with "political property" names
+   REQUIRED: vertices.length = properties.length
+   width,height,xpos,ypos as a ratio of window size  (0.0 - 1.0)
+   xpos,ypos delineate the top-left corner of the canvas
+   strokecolor and fillcolor are HTML colour strings "#XXXXXX" //american spelling to coincide with setColor
+*/
+
+function drawspider(xpos,ypos,width,height,vertices,properties,strokecolor,fillcolor) 
+{
+	// compute pixel values
+	absX = canW*xpos;
+	absY = canH*ypos;
+	absW = canW*width;
+	absH = canH*height;
+
+	// compute largest possible square edge length
+	side = (absW >= absH) ? absH : absW;
+
+	// reposition our origin (top left corner of drawable area)
+	// this will effectively center our spider horizontally
+	originX = (absW >= absH) ? absW/2.0 - side/2.0 : absX;
+	
+	// we want to stick to the timeline, no centering vertically
+	originY = absY;
+
+	midX = originX + side/2.0;
+	midY = originY + side/2.0;
+
+	// offset the central circle by this much
+	offset = side/9.0;
+
+	// we only need to calculate these once but will use them often
+	diameter = side*7.0/9.0;
+	radius = diameter*0.5;
+	outerradius = diameter*0.53;
+	step = diameter*0.125;
+
+	if( vertices.length != properties.length ) {
+		document.getElementById("status").innerHTML += "The vertices and properties arrays are not of the same size!<br>";
+		return;
+	} // */
+
+	chunk = 2*Math.PI/vertices.length;
+	angleoffset = -Math.PI/2; // centre the first spoke of the figure
+
+	// paint background as image image
+	back.drawImage("background.png",originX,originY,side,side);
+
+	/* 
+	// draw background
+	back.setColor("#e6e6e6");
+	back.fillRect(originX,originY,side,side);
+
+	back.setColor("#FFFFFF");
+	back.fillEllipse(originX+offset,
+			 originY+offset,
+			 diameter,
+			 diameter);
+
+	back.setColor("#9e9e9e");
+	for( i = 0; i < 4; i++ )
+	{
+		temp1 = offset+i*step;
+		temp2 = diameter*0.25*(4-i);
+		back.drawEllipse(originX+temp1,
+				 originY+temp1,
+				 temp2,
+				 temp2);
+	}
+
+	for( i = 0; i < vertices.length; i++ )
+	{
+		angle = i*chunk+angleoffset;
+		back.drawLine(midX,midY,
+			      midX+outerradius*Math.cos(angle),
+                              midY+outerradius*Math.sin(angle) );
+	} // */
+
+	var xpoints = [];
+	var ypoints = [];
+	// finally, draw the polygon
+	for( i = 0; i < vertices.length; i++ )
+	{
+		angle = i*chunk+angleoffset;
+		xpoints[i] = midX + radius*vertices[i]*Math.cos(angle);
+		ypoints[i] = midY + radius*vertices[i]*Math.sin(angle);
+	}
+	
+	back.setColor("#ababab");
+	back.fillPolygon(xpoints,ypoints);
+
+	back.setColor("#787878");
+	back.drawPolygon(xpoints,ypoints);
+}
+
+function drawtimeline(xpos,ypos,width,height,calendar) 
+{
+	if(1) { return; }
+}
+
+var phase = 0.05;
+// this function has to return an array of floats
+function get_vertices()
+{
+	temp = [];
+	temp[0] = 0.1+0.9*Math.abs(Math.cos(phase));
+	temp[1] = 0.1+0.9*Math.abs(Math.sin(phase));
+	temp[2] = 0.1+0.9*Math.exp(-2*phase);
+	temp[3] = 0.1+0.9*Math.exp(-2*Math.pow(phase-0.4,2)/0.6);
+	temp[4] = 0.5+0.2*Math.sin(phase+Math.PI/3);
+	temp[5] = 0.3+0.2*Math.cos(3*phase+Math.PI/8);
+	temp[6] = 0.4+0.4*Math.sin(8*phase);
+
+	/* for( i = 0; i < max_vert; i++) {
+		temp[i] = 0.1*i;
+	} */
+		
+	phase += 0.05;
+	return temp;
+}
+
+// this function has to return an array of strings
+function get_properties(language)
+{
+	temp = [];
+	switch(language) {
+		case("lb"):
+		default:
+			temp[0] = "Universalismus";
+			temp[1] = "ökonomëschen Liberalismus";
+			temp[2] = "Sëcherheet an Uerdnung";
+			temp[3] = "Traditionalismus";
+			temp[4] = "Sozialstaat";
+			temp[5] = "Ëmweltschutz";
+			temp[6] = "Demokratesch Partizipatioun";
+			break;
+	}
+
+	return temp;
+}
+
+//-->
+
+</script>
+
+</body>
+</html>
+

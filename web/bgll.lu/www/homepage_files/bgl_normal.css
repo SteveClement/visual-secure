@@ -1,0 +1,73 @@
+/* Normal text size */
+
+#bottomgreybar, 
+#bottomgreybar a,
+.greymenubar,
+.alt_drop td,
+table.listedtable td,
+table.listedtable th
+{font-size:10px}
+
+.menu a,
+.menu a:hover,
+.menuPB a,
+.menu PB a:hover,
+.menuOn a,
+.menuOn a:hover,
+.breadcrumbs,
+ul.OSservices li,
+ul#knowmorecontent,
+ul.linkeddoxcontent,
+#leftmenu .level2,
+#leftmenu .level2selected,
+#leftmenu .level3,
+#leftmenu .level3selected,
+#leftmenu .level1,#leftmenu .level1open,
+H3,
+td#centercol ul li,
+ul.othersites li,
+p,
+#OSTitle,
+#OSContent ul.OStopTitle,
+p.redtitle,div.linkeddox,
+div#webbanking,
+div#axxWebbanking,
+div.php_element,div.prohp_element, p.knowmore,
+div.focusOn p.headerfocusOn,
+div.leftcolAdd,
+div.leftcolvisualAdd,
+div.leftcolvisualAdd p,
+div.leftcolgreyvisualAdd,
+div.leftcolgreyvisualAdd p,
+p.encard100,
+p.encard80,div.apptitle,div.searchForm,
+div.searchForm input,
+div.searchForm textarea,
+div.searchForm select,
+div.appheader,
+table#sitemap,
+div.HPsegIntro,
+.SA-T2, 
+.SA-F2,
+.SA-F1,.SA-KWF,
+table.LstA-T1,
+table.JD-Tmaster,
+td.JD-FieldLabel,
+.CHP-log,.chp-text,div.filiale,div.legende
+{font-size:11px}
+
+p.divcoltitle,div.homepagetxt p.divcoltitle,div.leftcolvisualAdd p.divcoltitle, div.othersites p.divcoltitle,
+H2,div.php_element p.titre,p.titrefocusOn,div.prohp_element p.titre,table#sitemap .maintitle a{font-size:13px}
+
+div.filiale p.titre{font-size:14px}
+
+H1{font-size:15px}
+
+div.HPsegtitle,td.JD-Title{font-size:16px}
+
+
+
+
+
+
+

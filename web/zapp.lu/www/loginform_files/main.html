@@ -1,0 +1,825 @@
+window.SESSION_ID	= "sn=aWpq1xTIenZwd0";
+
+
+function ses(pURL)	{
+ return pURL;
+ 
+	URL = String(pURL);
+	
+	if(URL.indexOf(window.SESSION_ID)!=-1)	
+		return pURL;
+
+	if(URL.indexOf("?")==-1)	
+		URL=URL+"?"+window.SESSION_ID;
+	else
+		URL=URL+"&"+window.SESSION_ID;
+ return URL;
+}
+
+
+function o_ss(pSID, pMode)	{
+	return "/_a/_suspects/sheet.html?data[sid]="+pSID+"&nav[mode]="+pMode;
+}
+
+function o_ssbyhp(pHPID, pMode)	{
+	return "/_a/_suspects/sheet.html?data[hpid]="+pHPID+"&nav[mode]="+pMode;
+}
+
+
+function ams_homepage(pSID)	{
+	return "/_a/_ams/compose_homepage.html?data[sid]="+pSID;
+}
+
+
+function ams_suspect(pSID)	{
+	return "/_a/_ams/compose_suspect.html?data[sid]="+pSID;
+}
+
+function ams_article(pAID)	{
+	return "/_a/_ams/compose_article.html?data[aid]="+pAID;
+}
+
+function ams_message(pRID)	{
+	return "/_a/_ams/compose_message.html?data[rid]="+pRID;
+}
+function ams_2friends()	{
+	return "/_a/_ams/compose_2friends.html";
+}
+
+function ams_reply(pRID, pEID)	{
+	return "/_a/_ams/compose_message.html?data[rid]="+pRID+"&data[eid]="+pEID;
+}
+
+function ams_picture(pPID)	{
+ 	return "/_a/_ams/compose_picture.html?data[pid]="+pPID;
+}
+
+function ams_open(pID)	{
+	return "/_a/_ams/open.html?data[id]="+pID;
+}
+
+function ams_list(pConnected)		{
+	if ( pConnected )
+		return "/_a/_ams/index.html?connected=true";
+	else
+		return "/_a/_ams/index.html";	
+}
+
+function o_hpi(pType,pID)	{
+	return "/_a/_common/vhpic.html?type="+pType+"&id="+pID;
+}
+
+function o_pi(pID, pSource)	{
+	return "/_a/_pictures/vpic.html?pid="+pID+"&source="+pSource;
+}
+
+function o_fuh(pTypeID,pFIID, pHandler)	{
+	return "/_a/fuh/importform.html?data[idtype]="+pTypeID+"&data[fiid]="+pFIID+"&data[mode]="+pHandler;
+}
+
+function o_cat(pCatID)		{
+	return "/_a/_events/index.html?data[category]="+pCatID;
+}
+
+
+function o_lo(pLocationID)		{
+	return "/_a/_events/index.html?data[mode]=GLOBAL&data[locationid]="+pLocationID;
+}
+
+function o_ev(pLocationID, pEventID, pPage)	{	
+	return "/_a/_events/build.html?e="+pEventID+"&p="+pPage;
+}
+
+
+function o_qry(pMode, pqData, pPage)	{
+	var now = new Date();
+	return "/_a/_pictures/query.html?mode="+pMode+"&qdata="+pqData+"&page="+pPage+"&seed="+now.getTIME;
+}
+
+
+function o_sqry(pMode, pSource, pPage)	{
+	var now = new Date();
+	return "/_a/_pictures/query.html?mode="+pMode+"&source="+pSource+"&page="+pPage+"&seed="+now.getTIME;
+}
+
+
+// Called from the navigation bar, shorts everything up
+function o_cev(pBox, pMode)	{
+	if (pBox.options.selectedIndex> 0) show('/_a/_events/?mode='+pMode+'&qdata['+pMode+']='+pBox.options[pBox.options.selectedIndex].value);
+}
+
+function iswindow()	{
+	return ( window.name=="av4a" || window.name=="av4b") ;
+}
+
+function rs(pW,pH)	{
+	if (iswindow())	window.resizeTo(pW,pH);	
+}
+
+function rsf(pW,pH)	{
+	rs(pW,pH);
+	if (iswindow()) window.focus();
+}	
+
+function pw(pURL, pCIW)	{
+			if (typeof(pCIW)=='undefined')	{
+			show(pURL);
+		}	else
+			ciw(pURL);
+	}
+
+
+function reloadCW()	{
+	window.location.reload();
+}
+
+function reloadOpenerAndClose()	{
+	opener.document.location=ses(opener.document.location);
+	self.close();
+}
+
+function popupBlocker()	{
+	notice("Ech konnt d'Fenster leider net opmachen.\n\nDest kennt of fier well een POPUP Blocker installeiert ass, deen Werbung sou well verhenneren.\n An irrtuemlecherweis mengt den Site weilt lo werbung unweisen wat net den Fall ass.\n\nAm Microsoft Internet Explorer kann een am Menue 'TOOLS' enner 'Internet Options' enner 'Privacy', den Popup blocker ausschalten oder sou konfigureieren dass den Site daerf fensteren opmachen.\n\nBei weider froen patric@zap.lu");
+}
+
+function nwtop(pURL,pW, pH)	{
+			if (top)
+			top.location.href = 'http://www.zap.lu'+ses(pURL);
+		else
+			cw(pURL);	
+	}
+
+
+function nw(pURL,pW, pH)	{
+			cw(pURL);
+	}
+
+function nw2(pURL,pW, pH)	{
+	var win2 = window.open(ses(pURL),"av4b","width="+pW+",height="+pH+",resizable=yes,scrollbars");
+	if (win2==null) popupBlocker();
+}
+
+function nw3(pURL,pW, pH)	{
+	var win3 = window.open(ses(pURL),"av4c","width="+pW+",height="+pH+",resizable=yes,scrollbars");
+	win3.focus();
+	if (win3==null) popupBlocker();
+}
+
+
+function cw(pURL, Anchor)	{
+	if (typeof(Anchor)!='undefined')
+		location.href = ses(pURL)+"&showcritics=yes#"+Anchor;
+	else
+		location.href = ses(pURL);
+}
+
+function closew()	{
+	if(iswindow()) window.close();
+}
+
+function ciw(pURL)	{
+	if (iswindow())	{
+		show(pURL);
+		closew();
+	}	else	
+		aload(pURL);
+	
+
+}
+
+function tabload(pTabID, pSubTabID, pLink)	{
+	
+	var URL = pLink;
+	
+	if(URL.indexOf("?")==-1)	
+		URL=URL+"?tab="+pTabID+"&subtab="+pSubTabID;
+	else
+		URL=URL+"&tab="+pTabID+"&subtab="+pSubTabID;
+		
+	cw(URL);
+}
+
+function show(pURL)	{
+	if (iswindow())	{
+		if ( typeof opener.top == 'undefined' )	
+			window.close();
+		else
+			opener.top.location.href = ses(pURL);
+	}	else	
+		top.location.href = ses(pURL);
+
+}
+
+function fixIEactivate(pID, pString)	{
+	var tmp = getEA(pID);
+	if (!tmp)
+		return;
+		
+	tmp.innerHTML=pString;
+}
+
+function getEA(pID)	{
+
+    element = document.getElementById(pID);
+	if (element)
+		return element;
+		
+	try {
+	if (top && top.document)	{
+		element =top.document.getElementById(pID);		
+		if (element)
+			return element;
+	}
+	} catch (ex) { 
+	}
+	
+	if (frames['splashiframe'] && frames['splashiframe'].document)	{
+		element = frames['splashiframe'].document.getElementById(pID);
+		if (element)
+			return element;		
+	}
+
+ return null;
+}
+
+
+function getScrollCoords () {
+  if (typeof window.pageXOffset != 'undefined')
+  	return {x: window.pageXOffset, y: window.pageYOffset};
+  else 
+		if ((!document.compatMode || document.compatMode == 'BackCompat') && document.body && typeof document.body.scrollLeft != 'undefined')
+    	return {x: document.body.scrollLeft, y: document.body.scrollTop};
+	else
+		if (document.compatMode == 'CSS1Compat' && document.documentElement && typeof document.documentElement.scrollLeft != 'undefined')
+			return {x: document.documentElement.scrollLeft, y: document.documentElement.scrollTop};
+		else
+			return null;
+}
+
+function moveLayer (layerId, evt, pXDisp, pYDisp) {
+  if (document.layers)
+    document.layers[layerId].moveTo(evt.pageX+pXDisp, evt.pageY+pYDisp);
+  else {
+    var scrollCoords = getScrollCoords();
+    var layer;
+    if (document.all)
+      layer = document.all[layerId];
+    else if (document.getElementById)
+      layer =getEA(layerId);
+      
+    if (window.opera && layer) {
+      layer.style.left = pXDisp + evt.clientX + 'px';
+      layer.style.top = pYDisp + evt.clientY + 'px';
+    }
+    else if (layer && scrollCoords) {
+      layer.style.left = pXDisp + scrollCoords.x + evt.clientX + 'px';
+      layer.style.top = pYDisp + scrollCoords.y + evt.clientY + 'px';
+    }
+  }
+}
+
+function quote(pWhat)	{
+	window.status = pWhat;	
+}
+
+function getElement(pMode, pHint)	{
+	return getEA(pHint);
+}
+
+
+var current = 0;
+
+function quant(pNUM, pXDisp, pYDisp,  e)	{
+
+	box 			= getEA('MAIN'+pNUM);	
+	
+	box.style.top	= (pYDisp+57)+'px';
+	box.style.left	= (pXDisp+177)+'px';	
+
+
+	showit 			= box.style.display == 'none';	
+
+	if (current!=0) 
+		toggle('MAIN'+current, false);			
+		
+	toggle('MAIN'+pNUM, showit);
+
+	current = pNUM;			
+	
+	if (quant.arguments.length>4)	
+		inload('MAIN'+pNUM+'inner',quant.arguments[4]);
+}
+
+function rtoggle(elem_id) {
+	elem = getEA(elem_id)
+	if (elem)	
+		toggle(elem_id, elem.style.display == 'none');
+}
+	
+
+function toggle(elem_id, pShow) {
+	elem = getEA(elem_id);	
+	if (!elem) return;
+	
+	if(pShow) 
+		elem.style.display = "";
+	else 
+		elem.style.display = "none";
+}
+	
+function flip() {
+	if (document.images) for (var i=0; i < flip.arguments.length; i+=2) document[flip.arguments[i]].src = flip.arguments[i+1];
+}	function clickTAG()	{
+		location.href='http://www.fortisbanque.lu/SitePublic/DmDocId/121249347169918?language=fr';
+	}
+	
+	function replaceUrl(pURL)	{
+		location.replace(ses(pURL));
+	}
+	
+			function showRegion()	{
+				if ($('chooseRegion').visible())	{
+				  Effect.BlindUp('chooseRegion',{duration :0.5});
+				}	else	{
+				  Effect.BlindDown('chooseRegion',{duration :0.5});
+				  if ($('chooseAge').visible())
+				  	Effect.BlindUp('chooseAge',{duration :0.5});				  
+                                  if ($('chooseLangs').visible())
+                        		Effect.BlindUp('chooseLangs',{duration :0.5});				  
+				}				
+			}
+	
+	
+			function showLangs()	{
+				if ($('chooseLangs').visible())	{
+				  Effect.BlindUp('chooseLangs',{duration :0.5});
+				}	else	{
+				  Effect.BlindDown('chooseLangs',{duration :0.5});
+				  if ($('chooseAge').visible())
+				  	Effect.BlindUp('chooseAge',{duration :0.5});				  
+				  if ($('chooseRegion').visible())
+				  	Effect.BlindUp('chooseRegion',{duration :0.5});				  				  	
+				}				
+			}
+			
+			function showAge()	{
+				if ($('chooseAge').visible())	{
+				  Effect.BlindUp('chooseAge',{duration :0.5});
+				}	else	{
+				  Effect.BlindDown('chooseAge',{duration :0.5});
+				  if ($('chooseRegion').visible())
+				  	Effect.BlindUp('chooseRegion',{duration :0.5});				  
+				  if ($('chooseLangs').visible())
+				  	Effect.BlindUp('chooseLangs',{duration :0.5});				  
+				}				
+			}			
+
+
+// ---------------------------------------------------------------
+	var winWidth;
+ 	var winHeight	
+ 	
+	function getWandH()     {
+
+        if (typeof window.innerWidth!='undefined') {
+                winWidth = window.innerWidth;  
+                winHeight = window.innerHeight;
+        } else {
+                if (       document.documentElement
+                        && typeof document.documentElement.clientWidth!='undefined' 
+                        && document.documentElement.clientWidth!=0) {
+                                winWidth        = document.documentElement.clientWidth; 
+                                winHeight       = document.documentElement.clientHeight;
+                } else {
+                        if (document.body && typeof document.body.clientWidth!='undefined') {
+                                winWidth = document.body.clientWidth;  
+                                winHeight = document.body.clientHeight;
+                        }
+                }
+        }
+	}
+
+
+
+//------------------------------------------------------------------
+	
+	function notice()	{
+		var title = "zap.lu";
+		var text  = "";
+
+		if (arguments.length==1)	{
+			text	= arguments[0];
+		}	else	{
+			title	= arguments[0];
+			text	= arguments[1];	
+		}	
+		
+		
+		if ( window.guinotice && window.$) {
+			if (arguments.length==3)
+				window.guinotice(title, text, arguments[2]);
+			else
+				window.guinotice(title, text);
+	
+		}	else	{
+		  	text = text.replace(/&uuml;/, "ü");
+		  	text = text.replace(/&auml;/, "ä");
+		  	text = text.replace(/&ouml;/, "ö");
+		  	text = text.replace(/&Uuml;/, "Ü");
+		  	text = text.replace(/&Auml;/, "Ä");
+		  	text = text.replace(/&Ouml;/, "Ö");
+		  	
+			alert( "-- Zap.lu System message --\n\n"+ text);
+		}
+	}
+
+//------------------------------------------------------------------
+
+
+	
+	function ask(pMessage)	{
+		return window.confirm("-- Zap.lu System message --\n\n"+pMessage);
+	}
+
+	function disabledFeature(pElement, pReturnTo)	{
+			needAcc('Fir desen Feature ze aenneren brauchs de een Registreierten Account\n\nKlick OK wanns de wells registreieren, et dauert just 10 sekonnen.');
+	 	pElement.checked = pReturnTo;
+		}
+// ---------------------------------------------------------------
+	function xratedlock()	{
+		if (ask("Fiir X-Rated Fotoen ze kucken muss de daat explizit enablen.\nSou vermeiden mer dass eventuel schwaach Gemueter visuel belaestegt gin.\n\nWanns du wells X-Rated Fotoen gesin dann kanns de daat lo enablen an dengen Donneen.\n\nKlick OK fiir et ze enablen, an CANCEL falls dech X-Content net interesseiert")==true) 
+			show("/_a/_users/profile.html?profile[Mode]=profile/general");
+	}
+
+// ---------------------------------------------------------------
+
+	function confirm_GENERAL_deletion(pEntry, pFile)	{
+		if (ask("Bass de secher dass de dest laeschen wells?")==true) 
+		
+		
+			
+		
+		if(pFile.indexOf("?")==-1)
+			cw(pFile+"?data[id]="+pEntry);			
+		else
+			cw(pFile+"&data[id]="+pEntry);
+			
+		
+	 return false;
+	}
+
+	function confirm_AMS_deletion(pEntry)	{
+		if (ask("Bass de secher dass des Noricht laeschen wells?")==true) cw("/_a/_ams/del.html?data[id]="+pEntry);
+	 return false;
+	}
+
+
+	function confirm_EMAIL_deletion(pEntry) {
+       if (ask("Bass de secher dass de des Email laeschen wells?")==true) cw("/_email/delete.html?data[mids][]="+pEntry); 
+	 return false;
+	}
+
+
+	
+	function confirm_PROJECT_deletion(pEntry)	{
+		if (ask("Bass de secher dass de desen Projet wells laeschen?")==true) 
+			cw("/system/project/delproject.html?PID="+pEntry);
+	 return false;
+	}
+
+	function COM_receipts(pMessage)	{
+		notice(pMessage);
+	}
+
+	function AMS_waiting(pConnected)	{
+		if(ask("Du krus eng nei Noricht, wells de dei lo liesen?")==true)	{
+			if (window.name=="av4a") 
+				cw(ams_list(false));
+			else
+				nwtop(ams_list(false),510,550);
+		}
+	}
+
+	function EMAIL_waiting()	{
+		if(ask("Et ass eng EMAIL dei op dech ward, wells de dei lo liesen?")==true)	show('/_email/index.html');
+	}
+
+	function AMS_EMAIL_waiting()	{
+		if(ask("Et warden eng Noricht an eng EMAIL op dech, wells de dei lo liesen?")==true)	{
+			if (window.name=="av4a") 
+				cw(ams_list(false));
+			else
+				nwtop(ams_list(false),510,550);
+			show('/_email/index.html');
+		}
+	}
+// ---------------------------------------------------------------
+function needAcc(pMessage)	{
+	if(ask(pMessage)==true)	
+		show("/_a/_users/profile.html?profile[Mode]=profile/register");
+}
+
+// ---------------------------------------------------------------
+function checkemail(strEmail){
+	validRegExp = /^[^@]+@[^@]+.[a-z]{2,}$/i;
+ return (strEmail.search(validRegExp) != -1);
+}
+
+
+// ---------------------------------------------------------------
+
+function isNumeric(val)	{
+ return(parseFloat(val,10)==(val*1));
+}
+
+// ---------------------------------------------------------------
+
+function fixActiveContent()	{
+}
+
+// ---------------------------------------------------------------
+function switchregion(pRegion)	{
+	callUrl('/_a/_users/ajax/switchregion.html?region='+pRegion);
+	reloadCW();
+}
+
+
+function switchlang(pRegion)	{
+	callUrl('/_a/_users/ajax/switchlang.html?region='+pRegion);
+	reloadCW();
+}
+function switchage(pFrom, pTo)	{
+	callUrl('/_a/_users/ajax/switchage.html?from='+pFrom+'&to='+pTo);
+	reloadCW();
+}
+//---------------------------------------------------------------------------------------------------
+
+function toggleP(pID)	{
+	var mode;
+	var url;
+    var hotline             = new xhc(true);
+	var elem 				= getEA(pID)
+	var but 				= getEA(pID+'BUTTON');	
+	var img 				= getEA(pID+'IMG');	
+	
+	if (!elem || !(but || img)) 
+		return;
+
+
+	
+	if (elem.style.display == 'none')	{
+		toggle(pID, true);
+		
+		if(but)
+			but.value = '_';
+
+		if (img)
+			img.src=img.src.replace(/expand/,'shrink');
+			
+		mode='show';
+	}	else	{
+		toggle(pID, false);
+		if (but)
+			but.value = '^';
+			
+		if (img)
+			img.src=img.src.replace(/shrink/,'expand');
+			
+		mode='hide';
+	}
+	
+    if (!hotline) 
+    	return;        
+    url = ses('/_a/_users/ajax/togglepanel.html?panel='+pID+'&pmode='+mode);
+	hotline.connect(url, doNothing);	
+}
+
+function toggleAndLoad(pID, pURL)	{
+	
+	var url;
+    var hotline             = new xhc(true);
+	var elem 				= getEA(pID)
+	var but 				= getEA(pID+'BUTTON');	
+	var img 				= getEA(pID+'IMG');	
+	
+	if (!elem || !(but || img)) 
+		return;
+
+	
+	if (elem.style.display == 'none')	{
+			
+		inload(pID, pURL);	
+		elem.innerHTML = '<DIV style="margin:8px"><SPAN>...Lueden</SPAN></DIV>';
+		toggle(pID, true);
+		
+		if(but)
+			but.value = '_';
+
+		if (img)
+			img.src=img.src.replace(/expand/,'shrink');
+		
+			
+	}	else	{
+		toggle(pID, false);
+		if (but)
+			but.value = '^';
+			
+		if (img)
+			img.src=img.src.replace(/shrink/,'expand');
+			
+	}
+
+}
+
+//---------------------------------------------------------------------------------------------------
+
+function doNothing()	{
+}
+  
+//---------------------------------------------------------------------------------------------------
+ 
+function xhc(pAsync)	{
+	var xmlhttp, bComplete = false;
+	try {
+		xmlhttp = new ActiveXObject("Msxml2.XMLHTTP"); 
+	}
+	catch (e) { try { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
+	catch (e) { try { xmlhttp = new XMLHttpRequest(); }
+	catch (e) { xmlhttp = false; }}}
+
+	if (!xmlhttp) return null;
+
+	this.connect = function(sURL, fnDone)	{
+		if (!xmlhttp) return false;
+		bComplete = false;
+	    
+	
+	    try {
+	
+	        xmlhttp.open("GET", sURL, pAsync);
+		  	xmlhttp.onreadystatechange = function()	{
+	        											if (xmlhttp.readyState == 4 && !bComplete)	{
+	          												bComplete = true;
+	          												fnDone(xmlhttp);
+	        											}
+	        										};
+	      	xmlhttp.send("");
+	      	
+	    }  catch(z) { 
+	    
+	    	return false; 
+	   	}
+	    return true;
+	  };
+	   
+ return this;
+}
+
+
+//---------------------------------------------------------------------------------------------------
+
+var loadingElementID;
+
+function putic(oXML) {
+
+	var c  = getEA(loadingElementID);	
+
+	c.innerHTML=oXML.responseText;		
+	var allscript = c.getElementsByTagName('script');
+
+	
+	for(var i=0;i< allscript.length;i++)
+		if (	(allscript[i].text.indexOf("<!--")==-1)
+    		&&	(allscript[i].text.indexOf("//-->")==-1)	)	eval(allscript[i].text);
+
+
+}
+//---------------------------------------------------------------------------------------------------
+function callUrl(pURL)	{
+
+	var async = (arguments.length==2) ? arguments[1] : false;
+	
+ 	var hotline             = new xhc(async);              
+            
+	if (!hotline)
+		return false;        	                                                                                
+	
+ return hotline.connect(ses(pURL), doNothing);
+}
+//---------------------------------------------------------------------------------------------------
+
+function faload(pURL)    {
+		cw(pURL);
+	return;
+        var hotline             = new xhc(true);
+        var url                 = ses(pURL);
+                
+                
+        if (!hotline) return show(pURL);        
+                        
+	loadingElementID = 'aload';
+                                
+	getEA(loadingElementID).innerHTML='<BR><SPAN style="font-size:13px">lueden</SPAN>'; 
+
+                                                        
+	hotline.connect(url+'&frame=off&aloadmode=true', putic);
+}
+                                                                        
+function aload(pURL)	{
+	cw(pURL);
+}
+
+
+
+//---------------------------------------------------------------------------------------------------
+function inload(pID, pURL)	{
+
+	var hotline 		= new xhc(true);
+	var url 			= ses(pURL);
+
+
+	if (!hotline) return show(pURL);	
+
+	loadingElementID = pID;
+
+	getEA(loadingElementID).innerHTML='<BR><SPAN style="padding:20px;font-size:13px;vertical-align:middle"><IMG SRC="/skins/zap-blade/p/flower18.gif" border="0" style="padding-right:10px">Lueden</SPAN>';	
+	
+	hotline.connect(url, putic);
+}
+/* MetriWeb Javascript file */
+/* Version 4.5.2 -- 2008-01-19 */
+
+/* Please, do NEVER modify this monitored file! */
+
+var mw=new Object();
+
+mw.V="4.5.2";
+mw.i=new Image();
+mw.p=0;
+mw.l=0;
+mw.D=".metriweb.be";
+mw.W=function(u1,u2)
+{
+	if(mw.l){
+		if(mw.l++>1){
+			var nS=document.createElement("script");
+			nS.setAttribute("src", u1+"sd"+u2);
+			document.getElementsByTagName("head").item(0).appendChild(nS);
+		}else if(mw.i.width!=1){
+			var nS=document.createElement("script");
+			nS.setAttribute("src", u1+"td"+u2);
+			document.getElementsByTagName("head").item(0).appendChild(nS);
+		}
+	}else{
+		mw.i.src=u1+"dyn"+u2;
+		if(!mw.p){
+			var oL=window.onload;
+			if(typeof window.onload!='function') window.onload=function(){mw.l++;mw.W(u1,u2)}
+			else window.onload=function(){mw.l++;mw.W(u1,u2);oL()}
+		}
+	}
+}
+mw.n=function(d)
+{
+	var k="0000";
+	var t=d.split(".");
+	if(parseInt(k+t[t.length-1]))mw.d=d;
+	else mw.d="."+t[t.length-2]+"."+t[t.length-1];
+	t="charCodeAt(0)";
+	var c=(k+eval("\""+mw.d.split("").join("\"."+t+"+\"")+"\"."+t));
+	t=k+k+k+k+new Date().getTime();
+	t=t.substr(t.length-16,16);
+	return t.substr(0,13)+"."+t.substr(13,3)+c.substr(c.length-3,3)+".5";
+}
+mw.g=function(s,f)
+{
+	var c;
+	var o=document.cookie.indexOf(s+"=");
+	if(o<0){
+		c=f(document.domain);
+		document.cookie=s+"="+c+"; domain="+mw.d+"; path=/; expires="+
+			new Date(new Date().getTime()+365*24*3600000).toGMTString()+";";
+	}else{
+		var e=document.cookie.indexOf(";",o);
+		if(e<0)e=document.cookie.length;
+		c=document.cookie.substring(o+4,e);
+	}
+	return c;
+}
+mw.H=function()
+{
+	document.getElementById("metriwebLayer").style.visibility="hidden";
+}
+mw.c=mw.g("mwc",mw.n);
+
+function metriwebTag (tag,keyword,extra,refresh)
+{
+	mw.W('http://'+tag+mw.D+'/','/'+tag+'/mw.cgi?page='+keyword+
+		(extra?('&q='+extra):'')+(refresh?('&s='+refresh):'')+
+		'&c='+mw.c+'&v='+mw.V+'&p='+mw.p+'&d='+new Date().getTime()+'&R='+Math.random());
+	mw.p++;
+}
+
+/* (c) 2000-2008, DouWère */
+
+

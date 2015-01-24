@@ -1,0 +1,1498 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+<!-- (C) Patric de Waha - patric@p-dw.com	-->
+
+
+
+
+<!-- <META http-equiv="Page-Enter" content="blendTrans(duration=0.4)">-->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta name="description" content="zap.lu">
+<meta name="keyword" content="agenda,singles,kommunikatioun,disco,club,pubs,cafe,bal,baler,fotoen,party,community,chat">
+<title> { www.zap.lu ZAP V1 }</title>
+
+<script type="text/javascript" src="index_files/main.html" charset="UTF-8">
+</script>
+<script type="text/javascript" src="index_files/psos.html" charset="UTF-8">
+</script>
+
+
+<link rel="STYLESHEET" media="SCREEN" href="index_files/regular.css">
+<link rel="shortcut icon" href="http://www.zap.lu/faces/zap.lu/p/favicon.ico" type="image/x-icon">
+
+<link href="index_files/jquery.css" rel="stylesheet" type="text/css"><script src="index_files/autofilljs.html" type="text/javascript"></script><style>input.vpws_ac_red { background-image: url('https://myvidoop.com/images/plugin/v_safe_icon_toolbar_red_16x.gif') !important; background-position: right center !important; background-repeat: no-repeat !important }
+input.vpws_current_field  { background-image: url('https://myvidoop.com/images/plugin/v_safe_icon_add.gif') !important; background-position: right center !important; background-repeat: no-repeat !important }
+.vpws_added { cursor: pointer; font-family: arial; border: thin solid black; padding-top: 5px; padding: 5px; color: #0376CE; font-size: 14px; font-style: normal; background: white url('https://myvidoop.com/images/common/messagebox_ok.png') left center no-repeat; padding-left: 25px; position: absolute; }
+.vpws_new { display: block; padding-top: 5px; min-height: 20px; color: #0376CE; font-size: 90%; font-style: italic; background: url('https://myvidoop.com/images/plugin/v_safe_icon_add.gif') left center no-repeat; padding-left: 25px; }
+</style></head><body><div id="pageFader" onclick="deactivateHomepage(); " style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: white; z-index: 111; display: none;">&nbsp;</div>
+
+<div id="browser" style="position: absolute; z-index: 9000; top: 0px; left: 0px; width: 860px; height: 700px; display: none;">
+
+
+
+		<div style="position: absolute; z-index: 9000; left: 385px; top: 30px;"><a href="javascript:deactivateHomepage()"><img src="index_files/closebrowser.gif" border="0"></a></div>
+		<div style="overflow: hidden; height: 60px; width: 425px; z-index: 8000; background-image: url(/skins/zap-blade/p/browserHead.png); background-repeat: no-repeat; background-position: left top; text-align: right;">&nbsp;</div>
+		<div id="browserUrl"><a id="browserAnchor" href="" target="_blank"></a></div>
+
+	
+		<div class="browserBG" style="z-index: 9000; width: 860px; height: 700px;"><iframe class="browserBG" id="browserFrame" name="browserFrame" style="z-index: 9000; width: 860px; height: 700px;" marginheight="0" marginwidth="0" scrolling="auto" frameborder="0"></iframe></div>
+
+</div>
+<div class="default">
+<div style="width: 974px; margin-left: auto; margin-right: auto; position: relative;">
+	<div style="position: relative; top: 70px; width: 844px; background-image: url(/skins/zap-blade/p/head.png); background-repeat: no-repeat;">
+	
+
+				
+		
+		<div style="position: absolute; top: 36px; right: 5px; z-index: 1001;">
+			<div id="ubLoginAndCo">
+			<div class="default">
+									<a class="ubLoginAndCoLinks" style="" href="http://www.zapp.lu/profile.php">Member gin</a>
+			
+						 |  
+					<a class="ubLoginAndCoLinks" style="font-weight: bold;" href="http://www.zapp.lu/loginform.php">Anloggen</a>						
+						
+		
+				</div>			</div>	
+		</div>
+	
+
+            <div style="position: absolute; top: 35px; left: 145px; line-height: 18px; height: 18px; z-index: 1000;">
+                      <a class="wpFilterChosal" style="margin-right: 20px; line-height: 18px;" href="javascript:void(showLangs())">Letzebuergeg</a>
+
+      </div>
+
+
+	
+				<div style="position: absolute; top: 35px; left: 250px; line-height: 18px; height: 18px; z-index: 1000;">
+				<a class="wpFilterChosal" style="margin-right: 20px; line-height: 18px;" href="javascript:void(showRegion())">All Regiounen</a>										
+				
+		</div>
+		<div style="position: absolute; top: 35px; left: 355px; line-height: 18px; height: 18px; z-index: 1000;">		
+			<a class="wpFilterChosal" style="line-height: 18px;" href="javascript:void(showAge())">19 bis 40 Joer</a>
+		</div>
+
+
+       <div id="chooseLangs" style="display: none; z-index: 1000;">         
+               <div style="padding-left: 4px;">         
+
+                        <a class="wpFilterChosal" style="background-image: none;" href="javascript:switchlang('lu')">Letzebuergeg</a> 
+                        <a class="wpFilterChosal" style="background-image: none;" href="javascript:switchlang('de')">Deutsch</a>     
+               </div>         
+       </div>        
+
+
+		<div id="chooseRegion" style="display: none; z-index: 1000;">
+			<div style="padding-left: 4px;">
+	                        
+				<a class="wpFilterChosal" style="background-image: none;" href="javascript:switchregion(0)">All Regounen</a>
+					
+					<a class="wpFilterChosal" style="background-image: none;" href="javascript:switchregion(1)">Zentrum</a>
+	            	
+					<a class="wpFilterChosal" style="background-image: none;" href="javascript:switchregion(2)">Minett</a>
+	            	
+					<a class="wpFilterChosal" style="background-image: none;" href="javascript:switchregion(3)">Osten</a>
+	            	
+					<a class="wpFilterChosal" style="background-image: none;" href="javascript:switchregion(4)">Norden</a>
+	            	
+					<a class="wpFilterChosal" style="background-image: none;" href="javascript:switchregion(5)">Westen</a>
+	            	
+			</div>
+		</div>
+		
+		<div id="chooseAge" style="display: none; z-index: 1000;">
+		
+			<div><span style="color: white; padding-top: 3px; padding-left: 5px;">Filter fir den Alter</span></div>
+			<center>		
+				<div style="padding-top: 9px;">
+					<select id="chooseFrom" name="from" style="font-size: 8px;">
+						<option value="17">17</option><option value="18">18</option><option value="19" selected="selected">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option>					</select>
+					<span style="color: white;">bis</span>
+					<select id="chooseTo" name="to" style="font-size: 8px;">
+						<option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40" selected="selected">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option>					</select>			
+				</div>
+			</center>
+			<div style="padding: 4px; text-align: right;"><a class="wpFilterChosal" style="background-image: none;" href="javascript:switchage($F('chooseFrom'),$F('chooseTo'))">Speicheren</a></div>			
+		</div>
+			
+		<div style="position: relative; left: 0px; top: 0px;">
+		<div style="padding-top: 52px;">	
+			<div id="wpNavigation" style="overflow: hidden; float: left; margin-top: 19px; width: 135px; min-height: 250px;">
+			<div id="wpMainNavigation" class="borderbottom" style="padding-top: 1px;">			
+											<script language="javascript">
+							setLastActiveMainTab('wpNavHome')
+						</script>
+					
+						 						 		
+						 		
+							<a id="wpNavHome" class="wpMainTabActive" style="" href="javascript:void(mainTabClick('wpNavHome'));">Zap.lu</a>	
+							
+							<div id="wpNavHomeSD" class="wpSubTabContainer" style="">
+									
+		<a class="wpSubTabActive" href="http://www.zap.lu/_a/index.html?&amp;tab=1&amp;subtab=1">Iwersiicht</a>
+								
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_home/?&amp;tab=1&amp;subtab=2">Deng Homebase</a>
+										
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_ams/index.html?&amp;tab=1&amp;subtab=3">Deng Norichten</a>
+																	
+																	
+		<a class="wpSubTab" href="http://www.zap.lu/_a/shoutbox.html?&amp;tab=1&amp;subtab=4">Shoutbox</a>
+										
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_users/profile.html?profile%5BMode%5D=profile%2Fregister&amp;tab=1&amp;subtab=5">Member gin</a>
+									
+								
+							</div>
+							
+						
+						
+						 						
+						<a id="wpNavNightlife" class="wpMainTabInactive" style="" href="javascript:void(mainTabClick('wpNavNightlife'));">Nuetsliewen </a>	
+						
+						<div id="wpNavNightlifeSD" class="wpSubTabContainer" style="display: none;">
+								
+		<a class="wpSubTab" href="http://www.zap.lu/tabs/pictures.html?tab=7&amp;tab=7&amp;subtab=6">Iwersiicht</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_pictures/query.html?mode=4&amp;qdata=&amp;page=1&amp;tab=7&amp;subtab=7">Mescht gekuckten</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_pictures/query.html?mode=1&amp;qdata=&amp;page=1&amp;tab=7&amp;subtab=8">Di beschten</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_pictures/query.html?mode=8&amp;qdata=&amp;page=1&amp;tab=7&amp;subtab=9">Zoufaelleg Fotoen</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_events/?&amp;tab=7&amp;subtab=10">Event siichen</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_about/crew.html?&amp;tab=7&amp;subtab=11">Party Fotografen</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_agenda/?&amp;tab=7&amp;subtab=12">Agenda</a>
+								
+
+						</div>
+
+						 						
+						<a id="wpNavSingles" class="wpMainTabInactive" style="" href="javascript:void(mainTabClick('wpNavSingles'));">Singles</a>	
+						
+						
+						<div id="wpNavSinglesSD" class="wpSubTabContainer" style="display: none;">
+								
+		<a class="wpSubTab" href="http://www.zap.lu/tabs/singles.html?&amp;tab=4&amp;subtab=13">Iwersiicht</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_singles/?nav%5Bqry%5D=6&amp;tab=4&amp;subtab=14">Online Singles</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_singles/?nav%5Bqry%5D=7&amp;tab=4&amp;subtab=15">Dei nei Singles</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_singles/?nav%5Bqry%5D=8&amp;tab=4&amp;subtab=16">Mescht gekuckten</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_singles/?nav%5Bqry%5D=9&amp;tab=4&amp;subtab=17">Dei beleiwsten</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_singles/search.html?&amp;tab=4&amp;subtab=18">Siichen</a>
+			
+						</div>
+								
+
+						 
+						 	
+						<a id="wpNavHomepages" class="wpMainTabInactive" style="" href="javascript:void(mainTabClick('wpNavHomepages'));">Homepagen</a>	
+						
+						<div id="wpNavHomepagesSD" class="wpSubTabContainer" style="display: none;">
+								
+		<a class="wpSubTab" href="http://www.zap.lu/tabs/homepages.html?tab=5&amp;tab=5&amp;subtab=19">Iwersiicht</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_homepages/?nav%5Bqry%5D=7&amp;tab=5&amp;subtab=20">Nei HPs</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_homepages/?nav%5Bqry%5D=9&amp;tab=5&amp;subtab=21">Populaerst</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_homepages/?nav%5Bqry%5D=5&amp;tab=5&amp;subtab=22">Fresch upgdate</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_homepages/search.html?&amp;tab=5&amp;subtab=23">Siichen</a>
+							</div>
+												
+							
+						 							
+						
+						<a id="wpNavZapper" class="wpMainTabInactive" href="javascript:void(mainTabClick('wpNavZapper'));">Bewunner</a>	
+						
+						<div id="wpNavZapperSD" class="wpSubTabContainer" style="display: none;">
+								
+		<a class="wpSubTab" href="http://www.zap.lu/tabs/users.html?&amp;tab=3&amp;subtab=24">Iwersiicht</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_suspects/?nav%5Bqry%5D=6&amp;tab=3&amp;subtab=25">Online Bewunner</a>
+									
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_suspects/?nav%5Bqry%5D=7&amp;tab=3&amp;subtab=26">Dei nei</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_suspects/?nav%5Bqry%5D=8&amp;tab=3&amp;subtab=27">Mescht gekuckten</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_suspects/?nav%5Bqry%5D=9&amp;tab=3&amp;subtab=28">Dei populaerst</a>
+								
+								
+		<a class="wpSubTab" href="http://www.zap.lu/_a/_suspects/search.html?&amp;tab=3&amp;subtab=29">Siichen</a>
+								
+					
+						</div>
+						
+						
+														
+																		
+			</div>
+
+					
+																
+			
+			
+				
+	<!--*********************************************************
+		*********************************************************
+		********************************************************* -->
+
+	
+	
+			<div style="padding-top: 10px; padding-left: 6px;">
+	
+		<div style="height: 16px;">
+
+						        <div style="float: left; padding-left: 10px;"><a href="http://www.zap.lu/_a/shoutbox.html"><img src="index_files/shoutbox_anim.gif" onmouseover="this.src='/skins/zap-blade/p/shoutbox.gif'" onmouseout="this.src='/skins/zap-blade/p/shoutbox_anim.gif'"></a></div>
+		       
+		        <div style="float: left; padding-left: 10px;"><a href="http://www.zap.lu/_a/_users/profile.html?profile%5BMode%5D=profile%2Fregister"><img src="index_files/profile_gro.gif" onmouseover="this.src='/skins/zap-blade/p/profile.gif'" onmouseout="this.src='/skins/zap-blade/p/profile_gro.gif'"></a></div>
+		        
+		        		        
+				
+		        <div style="float: left; padding-left: 10px;"><a href="http://www.zap.lu/_a/_home/?subtab=2&amp;tab=1"><img id="izapicon" src="index_files/izap_gro.gif" onmouseover="this.src='/skins/zap-blade/p/izap.gif'" onmouseout="this.src='/skins/zap-blade/p/izap_gro.gif'"></a></div>
+								
+
+				
+								
+				<div style="float: left; padding-left: 10px;"><a href="http://www.zap.lu/_a/_ams/index.html"><img id="norichtenwait" src="index_files/norichten_gro.gif" onmouseover="this.src='/skins/zap-blade/p/norichten.gif'" onmouseout="this.src='/skins/zap-blade/p/norichten_gro.gif'"></a></div>
+
+		        
+		        <div style="width: 0pt; height: 0pt; clear: both;"></div>
+		</div>
+			
+	</div>	
+		
+
+	
+	<!--	*********************************************************
+		*********************************************************
+		********************************************************* -->
+		
+						
+	
+
+				
+		
+					<div style="padding-top: 10px;" class="default">
+						<div class="wpCorner href=" javascript:void(true)="">194 Visiteuren</div>	
+						<a class="wpSubTab" style="margin-bottom: 2px;" href="http://www.zap.lu/_a/_suspects/?nav%5Bqry%5D=6&amp;filter=1">103 Memberen</a>	
+						<div class="wpSubTab">91 Anonymer</div>
+					</div>
+					
+
+							</div>
+			</div>
+		
+			<div id="wpContent" style="overflow: hidden; float: right; width: 709px; position: relative;">
+						
+				<div style="border-style: solid; border-color: rgb(62, 93, 153) rgb(58, 88, 149) rgb(58, 88, 149) rgb(58, 94, 156); border-width: 1px; min-height: 640px; line-height: 0pt;">
+					<div style="position: absolute; top: 0pt; left: 0pt;"><img src="index_files/content_head_small.png" border="0"></div>
+					<div style="padding: 10px; line-height: normal; text-align: left;" class="default">
+					
+					
+
+
+<div>
+
+	<div style="width: 300px; float: left;">
+	        	                
+		 <div>
+<div class="boxRegularCanvas" style="width: 100%;">
+
+	<div class="boxRegularTopTab">
+		
+		<div class="boxRegularTopTab" style="float: left;">Neisten&nbsp;Reportagen</div>
+		<div style="clear: both;"></div>
+	</div>
+		
+		
+			
+
+	<div class="boxRegularInnerCanvas" style="padding-top: 3px; text-align: left;">
+		<div>		 <div id="eventslist">
+		 
+
+<div style="margin-top: 2px; text-align: right; padding-right: 10px;">
+				<a style="font-weight: bold; font-size: 16px; text-decoration: underline;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=1');">1</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=2');">2</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=3');">3</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=4');">4</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=5');">5</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=6');">6</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=7');">7</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=8');">8</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=9');">9</a>
+		 
+		<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=10');">...</a>		
+	</div>	
+		 <div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div>	
+		 
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=788494"><img src="index_files/788494.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=1"><span class="l">Disco &amp; Club events</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2469119943&amp;p=1"><span class="toCoolDateSmall">SA|<span class="toCoolDateBig">13|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2469119943&amp;p=1">Maxwel George </a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=179">Byblos</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=788116"><img src="index_files/788116.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=2"><span class="l">Cafe &amp; Pubs shots</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2468837428&amp;p=1"><span class="toCoolDateSmall">SA|<span class="toCoolDateBig">13|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2468837428&amp;p=1">Heineken Zu Fenn</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=2158919641">Divers</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787951"><img src="index_files/787951.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=3"><span class="l">Baaler &amp; Fester</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2468835298&amp;p=1"><span class="toCoolDateSmall">SA|<span class="toCoolDateBig">13|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2468835298&amp;p=1">Hepperdange</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=2371385824">DJ Sir Oliver</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787721"><img src="index_files/787721.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=5"><span class="l">Divers pix</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2468333387&amp;p=1"><span class="toCoolDateSmall">SA|<span class="toCoolDateBig">13|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2468333387&amp;p=1">Miss Fieldgen</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=13">Divers</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=788221"><img src="index_files/788221.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=1"><span class="l">Disco &amp; Club events</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2468839150&amp;p=1"><span class="toCoolDateSmall">FR|<span class="toCoolDateBig">12|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2468839150&amp;p=1">Wild Tequila</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=140">Muko Muko</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787761"><img src="index_files/787761.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=2"><span class="l">Cafe &amp; Pubs shots</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2468333964&amp;p=1"><span class="toCoolDateSmall">FR|<span class="toCoolDateBig">12|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2468333964&amp;p=1">Amadeus</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=2158919641">Divers</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787701"><img src="index_files/787701.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=2"><span class="l">Cafe &amp; Pubs shots</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2468012037&amp;p=1"><span class="toCoolDateSmall">FR|<span class="toCoolDateBig">12|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2468012037&amp;p=1">Café Em'porio</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=51">Cafen</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787637"><img src="index_files/787637.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=1"><span class="l">Disco &amp; Club events</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2467705415&amp;p=1"><span class="toCoolDateSmall">FR|<span class="toCoolDateBig">12|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2467705415&amp;p=1">5 ans Night Life</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=2230296088">Red Club</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787505"><img src="index_files/787505.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=4"><span class="l">User contribs</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2467254321&amp;p=1"><span class="toCoolDateSmall">MET|<span class="toCoolDateBig">10|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2467254321&amp;p=1">Alix Bday </a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=159">B-Day</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787446"><img src="index_files/787446.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=4"><span class="l">User contribs</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2464923583&amp;p=1"><span class="toCoolDateSmall">SO|<span class="toCoolDateBig">07|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2464923583&amp;p=1">Essen Motorshow</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=171">Cars &amp; Co</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787276"><img src="index_files/787276.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=2"><span class="l">Cafe &amp; Pubs shots</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2463960447&amp;p=1"><span class="toCoolDateSmall">SA|<span class="toCoolDateBig">06|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2463960447&amp;p=1">First Bar </a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=51">Cafen</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+									
+		<div>
+		
+			<div style="padding-top: 5px; height: 90px;">
+				<div style="float: left; width: 105px; height: 90px; margin-right: 10px;">
+																						
+					<a href="http://www.zap.lu/_a/_pictures/id_fwd.html?qdata=787171"><img src="index_files/787171.jpg"></a>					
+				</div>
+
+				<div style="float: left; padding-top: 3px;">
+
+					<div style="padding: 0px;"><a class="evlistCat" href="http://www.zap.lu/tabs/pictures.html?page=0&amp;cat=4"><span class="l">User contribs</span></a></div>
+					<div style="padding: 2px;"><span><a href="http://www.zap.lu/_a/_events/build.html?e=2463615669&amp;p=1"><span class="toCoolDateSmall">SA|<span class="toCoolDateBig">06|12</span>|08</span></a></span></div>
+					<div style="padding: 2px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">waat:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/build.html?e=2463615669&amp;p=1">18th Bday</a><div style="clear: both;"></div></div>
+					<div style="padding: 1px;"><span class="waatwou" style="display: block; float: left; width: 30px; margin-top: 1px;">wou:</span><a class="waatwou" style="float: left;" href="http://www.zap.lu/_a/_events/index.html?data%5Bmode%5D=GLOBAL&amp;data%5Blocationid%5D=159">B-Day</a><div style="clear: both;"></div></div>
+									
+				</div>
+				<div style="clear: both;"></div>
+
+			</div>						
+			<div><div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div></div>
+			
+			
+		</div>
+		
+	
+		 <div><div style="overflow: hidden; height: 1px; background-image: url(/skins/zap-blade/p/sep.gif);">&nbsp;</div></div>	
+		 
+
+<div style="margin-top: 2px; text-align: right; padding-right: 10px;">
+				<a style="font-weight: bold; font-size: 16px; text-decoration: underline;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=1');">1</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=2');">2</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=3');">3</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=4');">4</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=5');">5</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=6');">6</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=7');">7</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=8');">8</a>
+				<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=9');">9</a>
+		 
+		<a style="font-size: 12px;" href="javascript:inload('eventslist',%20'/_a/_events/ajax/latest.html?nav[page]=10');">...</a>		
+	</div>	
+		 </div>		 
+		 			</div>
+		</div>
+	</div>
+</div>	</div>
+	
+	<div style="width: 380px; float: right;">
+	 	
+	 	<div>
+<div class="boxRegularCanvas" style="width: 100%;">
+
+	<div class="boxRegularTopTab">
+		
+		<div class="boxRegularTopTab" style="float: left;">News&nbsp;vum&nbsp;Wort.lu</div>
+		<div style="clear: both;"></div>
+	</div>
+		
+		
+			
+
+	<div class="boxRegularInnerCanvas" style="padding-top: 3px; text-align: left;">
+		<div>
+
+
+<style type="text/css">
+.wortarrow {
+	background-image:url(/stuff/arrow.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+        opacity:0.5;
+        filter: alpha(opacity=50);
+}
+
+.wortarrow:hover {
+        opacity:1;
+        filter: alpha(opacity=100);
+}
+
+
+.dots {
+	border-top:1px dotted #3D5A99;
+}
+
+.worttitle {
+color: #333;
+font-size: 12px;
+font-family:Verdana; 
+}
+.worttopic {
+color:#25256B;
+font-size: 9px;
+font-family:Verdana;
+font-weight: bold;
+}
+
+</style>
+
+<div style="">
+<table align="center">
+<tbody><tr><td colspan="3">
+	
+<div style="">
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="FlashID" title="Wort" width="370" height="50">
+      <param name="movie" value="/stuff/wort.swf?clickTAG=%2Fstuff%2Fwc.html%3Fw%3DHomeButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu&amp;clickTAG1=%2Fstuff%2Fwc.html%3Fw%3DHomeButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu&amp;clickTAG2=%2Fstuff%2Fwc.html%3Fw%3DLetzebuergButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu%252Fwort%252Fweb%252Fletzebuerg%252F&amp;clickTAG3=%2Fstuff%2Fwc.html%3Fw%3DEuropaWeltButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu%252Fwort%252Fweb%252Feuropa_und_welt%252F&amp;clickTAG4=%2Fstuff%2Fwc.html%3Fw%3DSportButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu%252Fwort%252Fweb%252Fsport%252F&amp;clickTAG5=%2Fstuff%2Fwc.html%3Fw%3DBizButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu%252Fwort%252Fweb%252Fbusiness%252F&amp;clickTAG6=%2Fstuff%2Fwc.html%3Fw%3DFreizeitButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu%252Fwort%252Fweb%252Ffreizeit%252F&amp;clickTAG7=%2Fstuff%2Fwc.html%3Fw%3DDiverButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu%252Fwort%252Fweb%252Fvermischtes%252F&amp;clickTAG8=%2Fstuff%2Fwc.html%3Fw%3DServiceButton%26l%3Dhttp%253A%252F%252Fwww.wort.lu%252Fwort%252Fweb%252Fservice%252F">
+      <param name="quality" value="high">
+      <param name="wmode" value="opaque">
+      <param name="swfversion" value="6.0.65.0">
+
+      <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you dont want users to see the prompt. -->
+      <param name="expressinstall" value="Scripts/expressInstall.swf">
+      <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="index_files/wort.swf" width="370" height="50">
+        <!--<![endif]-->
+        <param name="quality" value="high">
+        <param name="wmode" value="opaque">
+        <param name="swfversion" value="6.0.65.0">
+        <param name="expressinstall" value="Scripts/expressInstall.swf">
+        <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+        <div>
+          <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="index_files/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33"></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+
+      <!--<![endif]-->
+    </object>
+</center>
+</div>
+</td></tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fsport%2Fartikel%2F04050%2Fdoppelter-celtic-erfolg.php" target="_blank"><img src="index_files/fittosize_50_0_bc327089b30af208fde988286b753025_cross.jpeg" border="0"></a></td>
+		<td style="padding-left: 5px;"><a class="worttopic" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fsport%2Fartikel%2F04050%2Fdoppelter-celtic-erfolg.php" target="_blank">Crosslauf</a><br><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fsport%2Fartikel%2F04050%2Fdoppelter-celtic-erfolg.php" target="_blank" class="worttitle">Doppelter Celtic-Erfolg</a></td>
+		<td style="width: 20px;"><a class="wortarrow" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fsport%2Fartikel%2F04050%2Fdoppelter-celtic-erfolg.php" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fletzebuerg%2Fartikel%2F04048%2Feisbaeren-und-polarmaenner-bei-winterlichen-temperaturen.php" target="_blank"><img src="index_files/fittosize_50_0_055fd4480898a80596aa23e15a79615a_band.jpeg" border="0"></a></td>
+		<td style="padding-left: 5px;"><a class="worttopic" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fletzebuerg%2Fartikel%2F04048%2Feisbaeren-und-polarmaenner-bei-winterlichen-temperaturen.php" target="_blank">Chrismas-Parade</a><br><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fletzebuerg%2Fartikel%2F04048%2Feisbaeren-und-polarmaenner-bei-winterlichen-temperaturen.php" target="_blank" class="worttitle">Eisbären und Polarmänner bei winterlichen Temperaturen</a></td>
+		<td style="width: 20px;"><a class="wortarrow" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fletzebuerg%2Fartikel%2F04048%2Feisbaeren-und-polarmaenner-bei-winterlichen-temperaturen.php" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fbusiness%2Fartikel%2F04046%2Feinstieg-bei-batterien-daimler-setzt-auf-e-autos.php" target="_blank"><img src="index_files/fittosize_50_0_d8bafbde9644318875c3c127e88f4781_frgbpoj_196.jpeg" border="0"></a></td>
+		<td style="padding-left: 5px;"><a class="worttopic" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fbusiness%2Fartikel%2F04046%2Feinstieg-bei-batterien-daimler-setzt-auf-e-autos.php" target="_blank">Automobil</a><br><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fbusiness%2Fartikel%2F04046%2Feinstieg-bei-batterien-daimler-setzt-auf-e-autos.php" target="_blank" class="worttitle">Einstieg bei Batterien: Daimler setzt auf  E-Autos</a></td>
+		<td style="width: 20px;"><a class="wortarrow" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Fbusiness%2Fartikel%2F04046%2Feinstieg-bei-batterien-daimler-setzt-auf-e-autos.php" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Feuropa_und_welt%2Fartikel%2F04044%2Fbush-zu-abschiedsbesuch-im-irak.php" target="_blank"><img src="index_files/fittosize_50_0_6772857d6408fb93b339d09a73854928_181_1982925.jpeg" border="0"></a></td>
+		<td style="padding-left: 5px;"><a class="worttopic" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Feuropa_und_welt%2Fartikel%2F04044%2Fbush-zu-abschiedsbesuch-im-irak.php" target="_blank">Ende einer Ära</a><br><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Feuropa_und_welt%2Fartikel%2F04044%2Fbush-zu-abschiedsbesuch-im-irak.php" target="_blank" class="worttitle">Bush zu Abschiedsbesuch im Irak</a></td>
+		<td style="width: 20px;"><a class="wortarrow" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Feuropa_und_welt%2Fartikel%2F04044%2Fbush-zu-abschiedsbesuch-im-irak.php" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Feuropa_und_welt%2Fartikel%2F04045%2Frussische-polizei-nimmt-150-kremlkritiker-fest.php" target="_blank"><img src="index_files/fittosize_50_0_5f189dd824565f304d0c92f87c07c475_092_1982909.jpeg" border="0"></a></td>
+		<td style="padding-left: 5px;"><a class="worttopic" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Feuropa_und_welt%2Fartikel%2F04045%2Frussische-polizei-nimmt-150-kremlkritiker-fest.php" target="_blank">Russland</a><br><a href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Feuropa_und_welt%2Fartikel%2F04045%2Frussische-polizei-nimmt-150-kremlkritiker-fest.php" target="_blank" class="worttitle">Polizei nimmt 150 Kremlkritiker fest</a></td>
+		<td style="width: 20px;"><a class="wortarrow" href="http://www.zap.lu/stuff/wc.html?w=topic&amp;l=http%3A%2F%2Fwww.wort.lu%2Fwort%2Fweb%2Feuropa_und_welt%2Fartikel%2F04045%2Frussische-polizei-nimmt-150-kremlkritiker-fest.php" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+        <tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr>
+</tbody></table>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>	 		
+		<div>
+<div class="boxRegularCanvas" style="width: 100%;">
+
+	<div class="boxRegularTopTab">
+		
+		<div class="boxRegularTopTab" style="float: left;">News&nbsp;vun&nbsp;der&nbsp;Rockhal</div>
+		<div style="clear: both;"></div>
+	</div>
+		
+		
+			
+
+	<div class="boxRegularInnerCanvas" style="padding-top: 3px; text-align: left;">
+		<div>
+
+
+
+<style type="text/css">
+.rharrow {
+	background-image:url(/stuff/arrowrh.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+        opacity:0.5;
+        filter: alpha(opacity=50);
+}
+
+.rharrow:hover {
+        opacity:1;
+        filter: alpha(opacity=100);
+}
+
+
+.dots {
+	border-top:1px dotted #3D5A99;
+}
+
+.rhtitle {
+color: #F45E2B;
+font-size: 12px;
+font-family:Verdana; 
+}
+.rhtopic {
+color:#F45E2B;
+font-size: 9px;
+font-family:Verdana;
+font-weight: bold;
+}
+
+</style>
+
+<div style="">
+<table align="center">
+<tbody><tr><td colspan="3">
+	
+<div style="">
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="FlashID" title="Rockhal" width="370" height="50">
+      <param name="movie" value="/stuff/rh.swf?clickTAG=%2Fstuff%2Frh.html%3Fw%3DHomeButton%26l%3Dhttp%253A%252F%252Fwww.rockhal.lu&amp;clickTAG1=%2Fstuff%2Frh.html%3Fw%3DAgenda%26l%3Dhttp%253A%252F%252Fwww.rockhal.lu%252Fen%252Fagenda%252F&amp;clickTAG2=%2Fstuff%2Frh.html%3Fw%3DFAQ%26l%3Dhttp%253A%252F%252Fwww.rockhal.lu%252Fen%252Ffaq%252F&amp;clickTAG3=%2Fstuff%2Frh.html%3Fw%3DNews%26l%3Dhttp%253A%252F%252Fwww.rockhal.lu%252Fen%252Fnews%252F&amp;clickTAG4=%2Fstuff%2Frh.html%3Fw%3DPastShows%26l%3Dhttp%253A%252F%252Fwww.rockhal.lu%252Fen%252Fpast-shows%252F&amp;clickTAG5=%2Fstuff%2Frh.html%3Fw%3DAbout%26l%3Dhttp%253A%252F%252Fwww.rockhal.lu%252Fen%252Fabout-us%252F">
+      <param name="quality" value="high">
+      <param name="wmode" value="opaque">
+      <param name="swfversion" value="6.0.65.0">
+
+      <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you dont want users to see the prompt. -->
+      <param name="expressinstall" value="Scripts/expressInstall.swf">
+      <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="index_files/rh.swf" width="370" height="50">
+        <!--<![endif]-->
+        <param name="quality" value="high">
+        <param name="wmode" value="opaque">
+        <param name="swfversion" value="6.0.65.0">
+        <param name="expressinstall" value="Scripts/expressInstall.swf">
+        <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+        <div>
+          <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="index_files/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33"></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+
+      <!--<![endif]-->
+    </object>
+</center>
+</div>
+</td></tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Frock-pop%2Fshow%2Fdetail%2Fshowcase-mean-poppa-lean-tresb%2F" target="_blank"><img src="index_files/748657b8ee.jpg" width="60" border="0" height="40"></a></td>
+		<td style="padding-left: 5px;"><a class="rhtopic" href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Frock-pop%2Fshow%2Fdetail%2Fshowcase-mean-poppa-lean-tresb%2F" target="_blank">SHOWCASE : Mean Poppa Lean + très.b</a><br><a href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Frock-pop%2Fshow%2Fdetail%2Fshowcase-mean-poppa-lean-tresb%2F" target="_blank" class="rhtitle"><span class="toCoolDateSmall">SO|<span class="toCoolDateBig">14|12</span>|08</span></a></td>
+		<td style="width: 20px;"><a class="rharrow" href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Frock-pop%2Fshow%2Fdetail%2Fshowcase-mean-poppa-lean-tresb%2F" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Fmetal-heavy%2Fshow%2Fdetail%2Fslipknot-machine-head-children-of-bodom%2F" target="_blank"><img src="index_files/afca258ede.png" width="60" border="0" height="25"></a></td>
+		<td style="padding-left: 5px;"><a class="rhtopic" href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Fmetal-heavy%2Fshow%2Fdetail%2Fslipknot-machine-head-children-of-bodom%2F" target="_blank"> SLIPKNOT + Machine Head + Children of Bodom</a><br><a href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Fmetal-heavy%2Fshow%2Fdetail%2Fslipknot-machine-head-children-of-bodom%2F" target="_blank" class="rhtitle"><span class="toCoolDateSmall">MEI|<span class="toCoolDateBig">15|12</span>|08</span></a></td>
+		<td style="width: 20px;"><a class="rharrow" href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Fmetal-heavy%2Fshow%2Fdetail%2Fslipknot-machine-head-children-of-bodom%2F" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Fother%2Fshow%2Fdetail%2Fjenifer%2F" target="_blank"></a></td>
+		<td style="padding-left: 5px;"><a class="rhtopic" href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Fother%2Fshow%2Fdetail%2Fjenifer%2F" target="_blank">JENIFER</a><br><a href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Fother%2Fshow%2Fdetail%2Fjenifer%2F" target="_blank" class="rhtitle"><span class="toCoolDateSmall">MET|<span class="toCoolDateBig">17|12</span>|08</span></a></td>
+		<td style="width: 20px;"><a class="rharrow" href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Fother%2Fshow%2Fdetail%2Fjenifer%2F" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+
+	<tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr> 
+	<tr>
+		<td style="padding-left: 10px; padding-top: 2px; min-height: 46px; width: 50px;"><a href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Frock-pop%2Fshow%2Fdetail%2Fska-punk-festival%2F" target="_blank"><img src="index_files/ff41f3b5c3.jpg" width="60" border="0" height="47"></a></td>
+		<td style="padding-left: 5px;"><a class="rhtopic" href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Frock-pop%2Fshow%2Fdetail%2Fska-punk-festival%2F" target="_blank">SKA PUNK FESTIVAL</a><br><a href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Frock-pop%2Fshow%2Fdetail%2Fska-punk-festival%2F" target="_blank" class="rhtitle"><span class="toCoolDateSmall">SA|<span class="toCoolDateBig">10|01</span>|09</span></a></td>
+		<td style="width: 20px;"><a class="rharrow" href="http://www.zap.lu/stuff/rh.html?w=topic&amp;l=http%3A%2F%2Fwww.rockhal.lu%2Fnc%2Ffr%2Fagenda%2Frock-pop%2Fshow%2Fdetail%2Fska-punk-festival%2F" border="0" target="_blank"><img src="index_files/x.gif" width="20" border="0" height="20"></a></td>
+
+	</tr>
+
+        <tr><td colspan="3" class="dots" style="line-height: 0pt;"><img src="index_files/x.gif" border="0"></td></tr>
+<tr><td colspan="3"> 
+
+
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="FlashID" title="Rockhal" width="370" height="50">
+      <param name="movie" value="/stuff/rockhal_next.swf?clickTAG=%2Fstuff%2Frh.html%3Fw%3DBanner%26l%3Dhttp%253A%252F%252Fwww.rockhal.lu%252Fabout-us%252Fzap-competition%252F&amp;content=Klick+an+gewann+2+Tickets+fier+Electricity+an+der+Rockhal%21">
+      <param name="quality" value="high">
+      <param name="wmode" value="opaque">
+      <param name="swfversion" value="6.0.65.0">
+
+      <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you dont want users to see the prompt. -->
+      <param name="expressinstall" value="Scripts/expressInstall.swf">
+      <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="index_files/rockhal_next.swf" width="370" height="50">
+        <!--<![endif]-->
+        <param name="quality" value="high">
+        <param name="wmode" value="opaque">
+        <param name="swfversion" value="6.0.65.0">
+        <param name="expressinstall" value="Scripts/expressInstall.swf">
+        <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+        <div>
+          <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="index_files/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33"></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+
+      <!--<![endif]-->
+    </object>
+</center>
+</td></tr>
+</tbody></table>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+		<div>
+<div class="boxRegularCanvas" style="width: 100%;">
+
+	<div class="boxRegularTopTab">
+		
+		<div class="boxRegularTopTab" style="float: left;">News</div>
+		<div style="clear: both;"></div>
+	</div>
+		
+		
+			
+
+	<div class="boxRegularInnerCanvas" style="padding-top: 3px; text-align: left;">
+		<div>			
+		<div style="padding-bottom: 5px;" class="default">
+		
+						
+				<div style="padding: 5px;">
+					<div class="newsTitle">Gewennspill</div>
+					<div style="float: left;">
+					
+						<div style="padding-right: 15px; padding-bottom: 6px;"><img name="pic2448335693" src="index_files/2448335693.png"></div>					</div>
+					
+					<div class="newsText" style="text-align: justify;">Eis <a href="http://www.zap.lu/940064"><u>Glecksfee</u></a>
+Gewennspill verloust regelméisseg Cadeauen wéi z.b. Entréesbilljeen.
+Surf bei him laanscht a schreiw em an d'Shoutbox wei ee Cadeau's de
+onbedengt wëlls a virwaat.<br>
+<br>
+De beschten Grond gewennt...also gëff dech drun:)!!! </div>
+				
+				</div>
+				
+				<div style="clear: both;"></div>
+	
+					</div>
+	 				</div>
+		</div>
+	</div>
+</div>			 		 	
+		<div>
+<div class="boxRegularCanvas" style="width: 100%;">
+
+	<div class="boxRegularTopTab">
+		
+		<div class="boxRegularTopTab" style="float: left;">Dei&nbsp;neisten&nbsp;Besicher</div>
+		<div style="clear: both;"></div>
+	</div>
+		
+		
+			
+
+	<div class="boxRegularInnerCanvas" style="padding-top: 3px; text-align: left;">
+		<div>		<div style="padding-left: 40px;">		
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/884060/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/884060/"><img src="index_files/1227472404550777109.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/884060/">louderschen</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">242</td><td><img src="index_files/g.gif" width="22" height="4"></td>
+						<td class="pop">7</td><td><img src="index_files/y.gif" width="2" height="4"></td>
+						<td class="pop">4</td><td><img src="index_files/r.gif" width="1" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">25 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/364902/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/364902/"><img src="index_files/1227719410160130934.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/364902/">kaps.gregor..</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">14</td><td><img src="index_files/g.gif" width="18" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">24 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/873501/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/873501/"><img src="index_files/1215184876294961226.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/873501/">fresh_asbl</a></div>
+						<div style="padding-top: 3px; height: 14px;"><span>&nbsp;</span></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">31 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/852970/"><img src="index_files/i.png" border="0"></a>
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/852970/"><img src="index_files/u60.png" border="0"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/852970/">politics5</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">28</td><td><img src="index_files/g.gif" width="22" height="4"></td>
+						<td class="pop">1</td><td><img src="index_files/y.gif" width="2" height="4"></td>
+						<td class="pop">1</td><td><img src="index_files/r.gif" width="2" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">30 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/936561/"><img src="index_files/i.png" border="0"></a>
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/936561/"><img src="index_files/1224286727021804440.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/936561/">Berti-1973</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">24</td><td><img src="index_files/g.gif" width="24" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">35 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/929126/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/929126/"><img src="index_files/1222719705459104120.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/929126/">steve_89</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">92</td><td><img src="index_files/g.gif" width="24" height="4"></td>
+						<td class="pop">1</td><td><img src="index_files/y.gif" width="1" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">19 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/937052/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/937052/"><img src="index_files/1223637899982932620.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/937052/">A-C-A-B</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">84</td><td><img src="index_files/g.gif" width="25" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">23 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/888020/"><img src="index_files/i.png" border="0"></a>
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/888020/"><img src="index_files/1228862472804289554.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/888020/">doubledeuce</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">41</td><td><img src="index_files/g.gif" width="25" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">23 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/938080/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/938080/"><img src="index_files/1229298561164054190.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/938080/">Sniper_36</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">125</td><td><img src="index_files/g.gif" width="24" height="4"></td>
+						<td class="pop">2</td><td><img src="index_files/y.gif" width="1" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">34 Jöer </div></div>
+				</div>
+				</div>
+						<div style="clear: both;"></div>
+		</div>		
+	 				</div>
+		</div>
+	</div>
+</div>	 	
+		<div>
+<div class="boxRegularCanvas" style="width: 100%;">
+
+	<div class="boxRegularTopTab">
+		
+		<div class="boxRegularTopTab" style="float: left;">Zoufaelleg&nbsp;Singles</div>
+		<div style="clear: both;"></div>
+	</div>
+		
+		
+			
+
+	<div class="boxRegularInnerCanvas" style="padding-top: 3px; text-align: left;">
+		<div>		<div style="padding-left: 40px;">
+		
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/938080/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/938080/"><img src="index_files/1229298561164054190.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/938080/">Sniper_36</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">125</td><td><img src="index_files/g.gif" width="24" height="4"></td>
+						<td class="pop">2</td><td><img src="index_files/y.gif" width="1" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">34 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/940201/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/940201/"><img src="index_files/1228557227660079678.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/940201/">mars-28</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">21</td><td><img src="index_files/g.gif" width="11" height="4"></td>
+						<td class="pop">1</td><td><img src="index_files/y.gif" width="1" height="4"></td>
+						<td class="pop">8</td><td><img src="index_files/r.gif" width="13" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">28 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/873501/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/873501/"><img src="index_files/1215184876294961226.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/873501/">fresh_asbl</a></div>
+						<div style="padding-top: 3px; height: 14px;"><span>&nbsp;</span></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">31 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/889208/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/889208/"><img src="index_files/1224200367581730681.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/889208/">Heineken28</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">99</td><td><img src="index_files/g.gif" width="24" height="4"></td>
+						<td class="pop">1</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">2</td><td><img src="index_files/r.gif" width="1" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">29 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/937052/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/937052/"><img src="index_files/1223637899982932620.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/937052/">A-C-A-B</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">84</td><td><img src="index_files/g.gif" width="25" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">23 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/941325/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/941325/"><img src="index_files/1229082703196362477.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/941325/">Streckel83</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">6</td><td><img src="index_files/g.gif" width="12" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">25 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/884060/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/884060/"><img src="index_files/1227472404550777109.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/884060/">louderschen</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">242</td><td><img src="index_files/g.gif" width="22" height="4"></td>
+						<td class="pop">7</td><td><img src="index_files/y.gif" width="2" height="4"></td>
+						<td class="pop">4</td><td><img src="index_files/r.gif" width="1" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">25 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/885500/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/885500/"><img src="index_files/1200040357832362874.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/885500/">Indi</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">129</td><td><img src="index_files/g.gif" width="25" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">26 Jöer </div></div>
+				</div>
+				</div>
+			
+				<div class="dotsonlinebg" style="margin: 5px 3px; float: left; width: 80px; height: 110px; padding-left: 5px; padding-bottom: 2px; padding-right: 3px; border-left-width: 1px; border-left-style: dotted;">
+
+					<div style="position: relative; text-align: left;">
+						<div style="position: absolute; right: 0px; top: 3px; width: 12px; height: 60px;">
+							<a href=""></a><a class="s" href="http://www.zap.lu/364902/"><img src="index_files/i.png" border="0"></a>
+															<img src="index_files/heart.png" border="0">
+														
+						</div>
+						<div style="overflow: hidden; padding-top: 3px; width: 60px; height: 60px;"><a class="s" href="http://www.zap.lu/364902/"><img src="index_files/1227719410160130934.jpg"></a></div>
+						<div style="padding-top: 3px; height: 14px;"><a class="s" href="http://www.zap.lu/364902/">kaps.gregor..</a></div>
+						<div style="padding-top: 3px; height: 14px;">	<table cellpadding="0" cellspacing="2">
+		 			<tbody><tr><td class="pop">14</td><td><img src="index_files/g.gif" width="18" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/y.gif" width="0" height="4"></td>
+						<td class="pop">0</td><td><img src="index_files/r.gif" width="0" height="4"></td></tr></tbody></table></div>
+						<div class="default"><div class="cardage" style="padding-top: 3px; height: 14px;">24 Jöer </div></div>
+				</div>
+				</div>
+						
+			<div style="clear: both;"></div>
+		</div>
+	 				</div>
+		</div>
+	</div>
+</div>	 	
+	 	
+	 	
+	</div>
+
+	<div style="clear: both;"></div>
+
+</div>
+
+		
+
+	
+</div>
+					<div style="position: absolute; bottom: 0pt; left: 0pt;"><img src="index_files/content_foot_small.png" border="0"></div>
+				</div>				
+				
+
+
+			</div>
+				<div style="width: 709px; float: right;">
+				
+						<center>
+													<span><a href="http://www.zap.lu/_a/_about/about.html">Iwert Zap.lu</a></span>
+												
+													
+							<span>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.zap.lu/_a/_about/pub.html">Publiciteit op Zap.lu</a></span>
+														
+																			
+							<span>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.zap.lu/_a/_about/press.html">Downloads</a></span>
+												
+																				
+							<span>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.zap.lu/_a/_about/support.html">Kontakt &amp; Support</a></span>
+																			
+																				
+							<span>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.zap.lu/_a/_about/faq.html">FAQ</a></span>
+																										
+							<span>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.zap.lu/_a/_about/blog.html">Blog</a></span>
+							
+						
+													<span>&nbsp;&nbsp;| &nbsp;&nbsp;<a href="http://www.zap.lu/faces/zap.lu/about/cim.html?sn=aWpq1xTIenZwd0"><img src="index_files/metriweb.gif"></a></span>
+							
+						</center>
+				</div>
+			
+			
+			<div style="clear: both;"></div>
+		</div>
+
+	<script type="text/javascript" charset="UTF-8">
+
+        	/* max. length:  123456789012345678901234 */
+            var keyword="zaplu";
+            var extra="na";
+
+            if (window.metriwebTag)
+            	metriwebTag ("zaplu", keyword, extra);
+           </script>
+		
+
+	</div>	
+		<div style="position: absolute; top: 4px; right: 130px;"><div style="width: 728px; height: 90px;"><div style="position: relative; width: 728px; height: 90px;">
+					<div id="ad728x90" style="overflow: hidden; width: 728px; height: 90px; visibility: visible; position: absolute; top: 0pt; right: 0pt; z-index: 1000;">
+						<div style="position: absolute; top: 0pt; right: 0pt;">
+						<script type="text/javascript"><!--//<![CDATA[
+						   var m3_u = (location.protocol=='https:'?'https://ads3.zap.lu/www/delivery/ajs.php':'http://ads3.zap.lu/www/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=1");
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+						//]]>--></script><script type="text/javascript" src="index_files/ajs_002.js"></script>
+						</div>
+					</div>
+			</div></div></div>
+			
+		<div style="position: absolute; top: 4px; right: 0px;">
+			<div style="width: 120px; height: 600px;"><div style="position: relative; width: 120px; height: 600px;">
+					<div id="ad120x600" style="overflow: hidden; width: 120px; height: 600px; visibility: visible; position: absolute; top: 0pt; right: 0pt; z-index: 1000;">
+						<div style="position: absolute; top: 0pt; right: 0pt;">
+						<script type="text/javascript"><!--//<![CDATA[
+						   var m3_u = (location.protocol=='https:'?'https://ads3.zap.lu/www/delivery/ajs.php':'http://ads3.zap.lu/www/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=6");
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+						//]]>--></script><script type="text/javascript" src="index_files/ajs.js"></script><div id="ox_a6435ef6264fa3e3944f51c6382de2a1" style="display: inline;"><embed type="application/x-shockwave-flash" src="index_files/sparta_support.swf" style="" id="Advertisement" name="Advertisement" quality="high" wmode="opaque" allowscriptaccess="always" flashvars="clickTARGET=_blank&amp;clickTAG=http%3A%2F%2Fads3.zap.lu%2Fwww%2Fdelivery%2Fck.php%3Foaparams%3D2__bannerid%3D100__zoneid%3D6__cb%3Dadea7ef475" width="120" height="600"></div>
+<script type="text/javascript"><!--// <![CDATA[
+var ox_swf = new FlashObject('http://ads3.zap.lu/www/images/sparta_support.swf', 'Advertisement', '120', '600', '10');
+ox_swf.addVariable('clickTARGET', '_blank');
+ox_swf.addVariable('clickTAG', 'http%3A%2F%2Fads3.zap.lu%2Fwww%2Fdelivery%2Fck.php%3Foaparams%3D2__bannerid%3D100__zoneid%3D6__cb%3Dadea7ef475');
+ox_swf.addParam('wmode', 'opaque');
+ox_swf.addParam('allowScriptAccess','always');
+ox_swf.write('ox_a6435ef6264fa3e3944f51c6382de2a1');
+// ]]> --></script><div id="beacon_100" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="index_files/lg.gif" alt="" style="width: 0px; height: 0px;" width="0" height="0"></div>
+
+						</div>
+					</div>
+			</div></div>		</div>
+	
+</div>
+</div>			<script src="index_files/urchin.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				_uacct = "UA-427062-6";
+				urchinTracker();
+			</script></body></html>

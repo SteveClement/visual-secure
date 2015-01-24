@@ -1,0 +1,50 @@
+<html>
+<head>
+<META name="Cache-control" content="no-cache">
+<META name="Pragma" content="no-cache">
+<META http-equiv="expires" content="-1">
+<title>BGL - Web Banking</title>
+</head>
+
+<script language="Javascript" >
+	document.cookie="wbklanguage=fr; path= /; domain=bgl.lu;";
+	
+	document.write('<frameset onUnload="testRefresh();"  rows="*">');
+	var name = new Date().toGMTString();
+	document.write('	<frame id="'+name+'" frameborder="NO" src="/reb0201/WebBanking/welcome.do?authid=ISI_01&location=master">');
+	document.write('</frameset>');
+
+function testConnected() {
+ var jID = (document.getElementById(name).contentWindow.document.cookie.indexOf("JSESSIONID") != -1)
+ var bckend = (document.getElementById(name).contentWindow.location.href.indexOf("reb02") != -1)
+ return (jID && bckend);
+}
+
+function testRefresh() {
+	if(document.getElementById(name).contentWindow == null || (window.event && window.event.clientX < -2000)) {
+		logoutServer();
+		return;
+	}
+	reloadPage();
+}
+
+function reloadPage() {
+ if(testConnected()) {
+  document.getElementById(name).src=document.getElementById(name).src+"&reload=true";
+  var date = new Date().getTime()+2000;
+  while(new Date().getTime() < date);
+ }
+}
+
+function logoutServer() {
+	document.cookie="JSESSIONID=deleted; path= /reb0101/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+	document.cookie="JSESSIONID=deleted; path= /reb0101_02/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+	document.cookie="JSESSIONID=deleted; path= /reb0201/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+	document.cookie="JSESSIONID=deleted; path= /reb0301/; expires=Thu, 01-Jan-1970 00:00:01 GMT ";
+	var img = new Image;
+	img.src='https://'+window.location.host+'/pkmslogout.form';
+	var date = new Date().getTime()+2000;
+	while(new Date().getTime() < date);
+}		
+</script>
+</html>
