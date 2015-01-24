@@ -1,0 +1,3 @@
+[submodule "geheim.lu/python/facebook-php-sdk-v4"]
+	path = geheim.lu/python/facebook-php-sdk-v4
+	url = git@github.com:facebook/facebook-php-sdk-v4.git
